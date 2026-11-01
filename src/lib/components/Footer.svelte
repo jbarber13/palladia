@@ -39,7 +39,11 @@
 		</div>
 	</div>
 	<div class="container legal">
-		<small>&copy; {year} {site.name}. All rights reserved.</small>
+		<small>
+			&copy; {year}
+			{site.name}. All rights reserved. ·
+			<a href={resolve('/privacy')}>Privacy Policy</a>
+		</small>
 	</div>
 </footer>
 

@@ -48,7 +48,39 @@ Always use `resolve('/page')` for internal links and `asset('/file')` for static
 
 ### Contact form
 
-GitHub Pages can't process form submissions. Create a free form at [Formspree](https://formspree.io), then set `formEndpoint` in `src/lib/site.ts`. Until then the form is displayed but disabled.
+GitHub Pages can't process form submissions, so the form posts to a third-party service. Until `contactForm.id` in `src/lib/site.ts` is set, the form is displayed but disabled.
+
+Two providers are supported out of the box (switch with `contactForm.provider`):
+
+|                          | Formspree (default)  | Web3Forms            |
+| ------------------------ | -------------------- | -------------------- |
+| Free submissions / month | 50                   | 250                  |
+| Dashboard history (free) | 30 days              | 30 days              |
+| Spam filtering, honeypot | Yes                  | Yes (+ hCaptcha)     |
+| Restrict to your domain  | Yes (free)           | Paid only            |
+| Paid tier                | from $10/mo (200/mo) | from $12/mo (10k/mo) |
+
+**Setup (Formspree):**
+
+1. Sign up at <https://formspree.io> using the inbox that should receive messages, and verify it.
+2. Create a form → copy the ID from its endpoint (`https://formspree.io/f/<ID>`).
+3. Paste it into `contactForm.id`, commit, and push.
+4. In Formspree form settings, enable **Restrict to domain** → `palladiamt.com` once the domain is live.
+5. Send a test message from the live site.
+
+**Setup (Web3Forms):** create an access key at <https://web3forms.com>, set `provider: 'web3forms'` and paste the key into `id`. (The key is designed to be public.)
+
+The form includes a hidden honeypot field for spam, an inline success/error message, and falls back to a normal form POST if JavaScript is disabled.
+
+> Neither service's standard plan is HIPAA-compliant. The form asks visitors not to include health details; keep it that way.
+
+### Privacy policy
+
+`src/routes/privacy/+page.svelte` is a boilerplate policy covering the contact form and hosting. Review it with the owner before launch, update `privacyPolicyUpdated` in `site.ts` when it changes, and revise it if analytics, cookies, embeds, or a newsletter are ever added.
+
+### Domain
+
+The site assumes `https://palladiamt.com` (`site.url` in `site.ts`), used for canonical links, `sitemap.xml`, and `robots.txt`. To connect it: in GitHub **Settings → Pages → Custom domain** enter the domain, then add the DNS records GitHub shows at the registrar (apex `A` records + `www` `CNAME`), and enable **Enforce HTTPS**. No code change is needed; the deploy workflow drops the `/palladia` base path automatically.
 
 ### Adding a page
 

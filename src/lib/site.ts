@@ -1,3 +1,5 @@
+import type { FormProvider } from './contact-form.ts';
+
 /**
  * Central business details. Edit values here and they update everywhere on the site.
  * Anything marked TODO is placeholder content.
@@ -5,6 +7,8 @@
 export const site = {
 	name: 'Palladia Music Therapy',
 	shortName: 'Palladia MT',
+	/** Production URL, no trailing slash. Used for canonical links and the sitemap. */
+	url: 'https://palladiamt.com', // TODO: confirm domain
 	tagline: 'Individual and group music therapy in the Chicagoland area', // TODO: final tagline
 	description:
 		'Palladia Music Therapy offers individual and group music therapy sessions for clients across the Chicagoland area.', // TODO: used as default meta description
@@ -26,11 +30,18 @@ export const site = {
 	serviceArea: ['Chicago', 'North Suburbs', 'West Suburbs', 'South Suburbs'], // TODO
 
 	/**
-	 * GitHub Pages can't process forms. Create a free form at https://formspree.io
-	 * and paste its endpoint here (e.g. 'https://formspree.io/f/abcdwxyz').
-	 * While empty, the contact form is shown but disabled.
+	 * Contact form backend (GitHub Pages can't process forms itself). See README → "Contact form".
+	 * - formspree: `id` is the form ID from https://formspree.io/f/<id>
+	 * - web3forms: `id` is the access key from https://web3forms.com
+	 * While `id` is empty the form is shown but disabled.
 	 */
-	formEndpoint: '',
+	contactForm: {
+		provider: 'formspree' as FormProvider,
+		id: '' // TODO: create form and paste ID
+	},
+
+	/** Shown at the top of the privacy policy. Update whenever the policy changes. */
+	privacyPolicyUpdated: '2026-11-01',
 
 	social: [
 		// TODO: add or remove links. Empty list hides the section.
