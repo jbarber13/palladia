@@ -69,7 +69,8 @@
 		font-family: var(--font-heading);
 		font-size: 1.35rem;
 		font-weight: 700;
-		letter-spacing: 0.01em;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
 		color: var(--color-heading);
 		text-decoration: none;
 		padding-block: 0.5rem;
