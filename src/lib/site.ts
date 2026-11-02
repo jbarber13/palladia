@@ -37,7 +37,7 @@ export const site = {
 	 */
 	contactForm: {
 		provider: 'formspree' as FormProvider,
-		id: '' // TODO: create form and paste ID
+		id: 'xjyyplwp'
 	},
 
 	/** Shown at the top of the privacy policy. Update whenever the policy changes. */
