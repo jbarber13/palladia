@@ -6,22 +6,22 @@ import type { FormProvider } from './contact-form.ts';
  */
 export const site = {
 	name: 'Palladia Music Therapy',
-	shortName: 'Palladia MT',
+	shortName: 'Palladia',
 	/** Production URL, no trailing slash. Used for canonical links and the sitemap. */
-	url: 'https://palladiamt.com', // TODO: confirm domain
+	url: 'https://palladiamt.com',
 	tagline: 'Individual and group music therapy in the Chicagoland area', // TODO: final tagline
 	description:
 		'Palladia Music Therapy offers individual and group music therapy sessions for clients across the Chicagoland area.', // TODO: used as default meta description
 
 	owner: {
-		name: 'Firstname Lastname', // TODO
-		credentials: 'MT-BC', // TODO: e.g. MT-BC, NMT, etc.
-		title: 'Board-Certified Music Therapist' // TODO
+		name: 'Gwendolyn Barber',
+		credentials: 'MT-BC, LPMT',
+		title: 'Board-Certified & Illinois-Licensed Music Therapist'
 	},
 
 	contact: {
-		phone: '(555) 555-5555', // TODO
-		email: 'hello@example.com', // TODO
+		phone: '(847) 282-0048',
+		email: 'gwen@palladiamt.com',
 		/** Leave empty to hide. Shown as "City, State" only — no street address needed for a mobile practice. */
 		city: 'Chicago',
 		region: 'IL'

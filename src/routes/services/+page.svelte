@@ -40,16 +40,40 @@
 
 <Section>
 	<h2>Rates &amp; scheduling</h2>
-	<!-- TODO: pricing, insurance/payment info, session lengths, cancellation policy -->
-	<p>
-		Placeholder: session lengths, rates or “contact for pricing”, accepted payment methods, and
-		scheduling details.
-	</p>
+	<dl class="facts">
+		<dt>Session length</dt>
+		<dd>Based on each client’s needs; most sessions run 30–45 minutes.</dd>
+		<dt>Rates</dt>
+		<dd>
+			Please <a href={resolve('/contact')}>get in touch</a> for pricing.
+		</dd>
+		<!-- TODO: payment methods / insurance, free consultation, cancellation policy -->
+	</dl>
 	<p>Serving: {site.serviceArea.join(', ')}.</p>
 	<a class="button" href={resolve('/contact')}>Request a consultation</a>
 </Section>
 
 <style>
+	.facts {
+		display: grid;
+		grid-template-columns: max-content 1fr;
+		gap: var(--space-1) var(--space-3);
+		margin: 0 0 var(--space-3);
+	}
+	.facts dt {
+		font-weight: 700;
+	}
+	.facts dd {
+		margin: 0;
+	}
+	@media (max-width: 30rem) {
+		.facts {
+			grid-template-columns: 1fr;
+		}
+		.facts dd {
+			margin-bottom: var(--space-1);
+		}
+	}
 	@media (min-width: 48rem) {
 		.flip {
 			order: 2;

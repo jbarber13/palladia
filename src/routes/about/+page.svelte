@@ -39,11 +39,24 @@
 	<div class="grid-2 top">
 		<div>
 			<h2>Education &amp; credentials</h2>
-			<!-- TODO: real credentials -->
+			<h3>Education</h3>
 			<ul>
-				<li>Board-Certified Music Therapist (MT-BC), Certification Board for Music Therapists</li>
-				<li>Degree, University — placeholder</li>
-				<li>Additional training or certifications — placeholder</li>
+				<li>Bachelor of Music Therapy, Radford University</li>
+			</ul>
+			<h3>Certification &amp; licensure</h3>
+			<ul>
+				<li>
+					<strong>MT-BC</strong> — Music Therapist–Board Certified, a national credential from the Certification
+					Board for Music Therapists (CBMT)
+				</li>
+				<li>
+					<!-- TODO: confirm exact license title with client -->
+					<strong>LPMT</strong> — Licensed Practicing Music Therapist, State of Illinois
+				</li>
+			</ul>
+			<h3>Professional memberships</h3>
+			<ul>
+				<li>American Music Therapy Association (AMTA)</li>
 			</ul>
 		</div>
 		<div>
@@ -94,6 +107,10 @@
 	}
 	.top {
 		align-items: start;
+	}
+	h3 {
+		font-size: 1.05rem;
+		margin: var(--space-3) 0 var(--space-1);
 	}
 	.role {
 		color: var(--color-text-muted);
