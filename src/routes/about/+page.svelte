@@ -5,6 +5,7 @@
 	import Hero from '#lib/components/Hero.svelte';
 	import Section from '#lib/components/Section.svelte';
 	import Image from '#lib/components/Image.svelte';
+	import Logo from '#lib/components/Logo.svelte';
 </script>
 
 <Seo
@@ -56,8 +57,27 @@
 	</div>
 </Section>
 
+<Section tone="tint">
+	<div class="grid-2 name-story">
+		<div class="story-logo"><Logo size={280} /></div>
+		<div>
+			<h2>The name &amp; the owl</h2>
+			<!-- TODO: client to explain the meaning of "Palladia" and the owl logo -->
+			<p>
+				Placeholder: the story behind the name “Palladia” and the owl, e.g. what it represents —
+				wisdom, attentive listening, guidance — and how that connects to the practice.
+			</p>
+			<p>
+				Placeholder: a sentence about the musical staff that wraps the owl and the role of music in
+				the work.
+			</p>
+		</div>
+	</div>
+</Section>
+
 <Section>
 	<div class="cta">
+		<div class="cta-logo"><Logo size={72} alt="" /></div>
 		<h2>Let’s talk</h2>
 		<a class="button" href={resolve('/contact')}>Contact {site.shortName}</a>
 	</div>
@@ -78,6 +98,26 @@
 	.role {
 		color: var(--color-text-muted);
 		font-style: italic;
+	}
+	.name-story {
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+	}
+	.story-logo {
+		display: flex;
+		justify-content: center;
+	}
+	@media (max-width: 48rem) {
+		.name-story {
+			grid-template-columns: 1fr;
+		}
+		.story-logo :global(img) {
+			width: 12rem;
+		}
+	}
+	.cta-logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: var(--space-2);
 	}
 	.cta {
 		text-align: center;

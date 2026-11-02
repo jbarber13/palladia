@@ -4,6 +4,7 @@
 	import { afterNavigate } from '$app/navigation';
 	import { site } from '#lib/site.ts';
 	import { nav } from '#lib/nav.ts';
+	import Logo from './Logo.svelte';
 
 	let open = $state(false);
 
@@ -14,12 +15,9 @@
 <header>
 	<div class="container bar">
 		<a class="brand" href={resolve('/')}>
-			<!--
-				TODO: logo. Put the file in static/images/ and swap the text for:
-				<img src={asset('/images/logo.svg')} alt={site.name} height="48" />
-				(import { asset } from '$app/paths')
-			-->
-			{site.name}
+			<!-- alt is empty because the visible name next to it already labels the link -->
+			<Logo size={56} alt="" loading="eager" />
+			<span>{site.name}</span>
 		</a>
 
 		<button
@@ -65,11 +63,24 @@
 		flex-wrap: wrap;
 	}
 	.brand {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
 		font-family: var(--font-heading);
 		font-size: 1.35rem;
 		font-weight: 700;
-		color: var(--color-primary-dark);
+		letter-spacing: 0.01em;
+		color: var(--color-heading);
 		text-decoration: none;
+		padding-block: 0.5rem;
+	}
+	@media (max-width: 24rem) {
+		.brand {
+			font-size: 1.1rem;
+		}
+		.brand :global(img) {
+			width: 2.75rem;
+		}
 	}
 	ul {
 		list-style: none;

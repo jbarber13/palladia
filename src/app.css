@@ -3,24 +3,35 @@
  * To use a web font, add its <link> in src/app.html and update --font-* here.
  */
 :root {
-	/* Colors — TODO: update to match the logo/brand */
-	--color-primary: #3f6b5c;
-	--color-primary-dark: #2d5045;
-	--color-accent: #c98a5a;
-	--color-bg: #fbf9f5;
+	/*
+	 * Colors, sampled from the logo (src/assets/Logo.svg):
+	 * blue lettering → primary, mint outer ring → muted-bg, aqua inner circle → tint,
+	 * teal-green plumage → accent. All text/background pairs meet WCAG AA contrast.
+	 */
+	--color-primary: #0b6bd6; /* logo lettering blue (darkened slightly for legible text) */
+	--color-primary-dark: #0a56b0; /* button hover */
+	--color-heading: #0b3b6f; /* deep navy */
+	--color-accent: #1d7a68; /* teal green */
+	--color-accent-soft: #9ddad5; /* aqua, decorative only (not for text) */
+	--color-bg: #f6fbfa; /* near-white with a hint of mint */
 	--color-surface: #ffffff;
-	--color-muted-bg: #f1ece3;
-	--color-text: #2a2a2a;
-	--color-text-muted: #5f5f5f;
-	--color-border: #e3ddd2;
+	--color-muted-bg: #e9f7f1; /* logo outer ring mint */
+	--color-tint: #e1f1f7; /* logo inner circle aqua, lightened */
+	--color-text: #1f2a30;
+	--color-text-muted: #4b5a63;
+	--color-border: #d5e8e4;
+	--color-footer-bg: #0b3350;
+	--color-footer-text: #dbeef5;
+	--color-success-bg: #dff3ea;
+	--color-error-bg: #fbe5e3;
 
-	/* Typography */
+	/* Typography. Headings use a classical-humanist stack similar to the logo lettering. */
 	--font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-	--font-heading: Georgia, 'Times New Roman', serif;
+	--font-heading: Optima, Candara, 'Noto Sans', 'Segoe UI', system-ui, sans-serif;
 
 	/* Layout */
 	--max-width: 72rem;
-	--radius: 0.75rem;
+	--radius: 1rem;
 	--space-1: 0.5rem;
 	--space-2: 1rem;
 	--space-3: 1.5rem;
@@ -52,7 +63,7 @@ h2,
 h3 {
 	font-family: var(--font-heading);
 	line-height: 1.2;
-	color: var(--color-primary-dark);
+	color: var(--color-heading);
 	margin: 0 0 var(--space-2);
 }
 
@@ -135,6 +146,9 @@ img {
 	border: 1px solid var(--color-border);
 	border-radius: var(--radius);
 	padding: var(--space-3);
+	box-shadow:
+		0 1px 2px rgb(11 59 111 / 0.04),
+		0 8px 24px rgb(11 59 111 / 0.06);
 }
 
 .visually-hidden {

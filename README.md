@@ -37,14 +37,14 @@ Find all placeholder content with: `grep -rn TODO src`
    	import { asset } from '$app/paths';
    </script>
 
-   <Image src={asset('/images/headshot.jpg')} alt="Photo of ..." ratio="1 / 1" />
+   <Image src={asset('images/headshot.jpg')} alt="Photo of ..." ratio="1 / 1" />
    ```
 
    Without `src`, `Image` renders a striped placeholder box.
 
-3. For the logo, see the comment in `Header.svelte`.
+3. **Logo:** `src/assets/Logo.svg` is the original from the client. It's actually a 2048px JPEG inside an SVG wrapper (1.35 MB), so the site uses resized, transparent-cutout copies instead (`logo-160.webp`, `logo-640.webp`, `favicon.png`, plus `static/apple-touch-icon.png` and `static/og-image.jpg`). Regenerate those if the logo changes. A true vector logo from the designer would be better.
 
-Always use `resolve('/page')` for internal links and `asset('/file')` for static files (both from `$app/paths`) so links keep working under the GitHub Pages sub-path.
+Always use `resolve('/page')` for internal links and `asset('file')` for static files (both from `$app/paths`) so links keep working under the GitHub Pages sub-path.
 
 ### Contact form
 

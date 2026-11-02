@@ -9,10 +9,20 @@
 		/** Image URL. Omit to show a placeholder; pass `null` to hide the image column entirely. */
 		image?: string | null;
 		imageAlt?: string;
+		imageRatio?: string;
+		imageFit?: 'cover' | 'contain';
 		children?: Snippet;
 	};
 
-	let { title, subtitle, image, imageAlt = 'Hero image', children }: Props = $props();
+	let {
+		title,
+		subtitle,
+		image,
+		imageAlt = 'Hero image',
+		imageRatio,
+		imageFit,
+		children
+	}: Props = $props();
 </script>
 
 <section class="hero">
@@ -23,7 +33,16 @@
 			{#if children}<div class="actions">{@render children()}</div>{/if}
 		</div>
 		{#if image !== null}
-			<Image src={image} alt={imageAlt} label="Hero image placeholder" />
+			<div class="media">
+				<Image
+					src={image}
+					alt={imageAlt}
+					ratio={imageRatio}
+					fit={imageFit}
+					loading="eager"
+					label="Hero image placeholder"
+				/>
+			</div>
 		{/if}
 	</div>
 </section>
@@ -31,7 +50,14 @@
 <style>
 	.hero {
 		padding-block: var(--space-5);
-		background: linear-gradient(180deg, var(--color-muted-bg), var(--color-bg));
+		background:
+			radial-gradient(circle at 85% 20%, var(--color-tint), transparent 55%),
+			linear-gradient(160deg, var(--color-muted-bg), var(--color-bg) 70%);
+	}
+	.media {
+		max-width: 30rem;
+		justify-self: center;
+		width: 100%;
 	}
 	.subtitle {
 		font-size: 1.2rem;

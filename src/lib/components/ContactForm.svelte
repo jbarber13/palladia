@@ -145,10 +145,10 @@
 		font-size: 0.95rem;
 	}
 	.success {
-		background: #e3f1e8;
+		background: var(--color-success-bg);
 	}
 	.error {
-		background: #f8e4e1;
+		background: var(--color-error-bg);
 	}
 	button {
 		justify-self: start;

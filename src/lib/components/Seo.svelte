@@ -20,5 +20,9 @@
 	<meta property="og:url" content={canonical} />
 	<meta property="og:site_name" content={site.name} />
 	<meta property="og:type" content="website" />
-	<!-- TODO: add og:image once a social share image exists -->
+	<meta property="og:image" content="{site.url}/og-image.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="{site.name} logo" />
+	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>

@@ -5,6 +5,8 @@
 	import Hero from '#lib/components/Hero.svelte';
 	import Section from '#lib/components/Section.svelte';
 	import Image from '#lib/components/Image.svelte';
+	import logo from '#assets/logo-640.webp';
+	import Logo from '#lib/components/Logo.svelte';
 
 	// Structured data so search engines understand this is a local business.
 	const jsonLd = {
@@ -34,8 +36,12 @@
 <Hero
 	title="Music therapy that meets you where you are"
 	subtitle="{site.name} provides individual and group music therapy sessions throughout the Chicagoland area."
-	imageAlt="Music therapy session"
+	image={logo}
+	imageAlt="{site.name} logo: an owl surrounded by musical notes"
+	imageRatio="1 / 1"
+	imageFit="contain"
 >
+	<!-- TODO: swap the logo for a hero photo once available (and drop imageRatio/imageFit) -->
 	<a class="button" href={resolve('/contact')}>Schedule a consultation</a>
 	<a class="button secondary" href={resolve('/services')}>Explore services</a>
 </Hero>
@@ -75,6 +81,7 @@
 
 <Section>
 	<div class="cta">
+		<div class="cta-logo"><Logo size={88} alt="" /></div>
 		<h2>Ready to get started?</h2>
 		<!-- TODO: CTA copy -->
 		<p>Reach out for a free phone consultation to talk about goals and next steps.</p>
@@ -87,6 +94,11 @@
 		display: grid;
 		gap: var(--space-3);
 		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+	}
+	.cta-logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: var(--space-2);
 	}
 	.cta {
 		text-align: center;

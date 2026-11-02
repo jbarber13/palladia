@@ -2,6 +2,7 @@
 	import { resolve } from '$app/paths';
 	import { site } from '#lib/site.ts';
 	import { nav } from '#lib/nav.ts';
+	import Logo from './Logo.svelte';
 
 	const year = new Date().getFullYear();
 </script>
@@ -9,7 +10,10 @@
 <footer>
 	<div class="container cols">
 		<div>
-			<p class="name">{site.name}</p>
+			<div class="brand">
+				<Logo size={72} alt="" />
+				<p class="name">{site.name}</p>
+			</div>
 			<p>{site.tagline}</p>
 		</div>
 
@@ -49,8 +53,8 @@
 
 <style>
 	footer {
-		background: var(--color-primary-dark);
-		color: #e9efe9;
+		background: var(--color-footer-bg);
+		color: var(--color-footer-text);
 		padding-block: var(--space-4) var(--space-2);
 		margin-top: var(--space-5);
 	}
@@ -65,6 +69,15 @@
 		.cols {
 			grid-template-columns: 2fr 2fr 1fr;
 		}
+	}
+	.brand {
+		display: flex;
+		align-items: center;
+		gap: var(--space-2);
+		margin-bottom: var(--space-2);
+	}
+	.brand .name {
+		margin: 0;
 	}
 	.name {
 		font-family: var(--font-heading);

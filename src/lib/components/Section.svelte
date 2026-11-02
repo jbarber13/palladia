@@ -3,7 +3,7 @@
 	import type { Snippet } from 'svelte';
 
 	type Props = {
-		tone?: 'default' | 'muted';
+		tone?: 'default' | 'muted' | 'tint';
 		id?: string;
 		children: Snippet;
 	};
@@ -11,7 +11,7 @@
 	let { tone = 'default', id, children }: Props = $props();
 </script>
 
-<section {id} class:muted={tone === 'muted'}>
+<section {id} class:muted={tone === 'muted'} class:tint={tone === 'tint'}>
 	<div class="container">
 		{@render children()}
 	</div>
@@ -23,5 +23,8 @@
 	}
 	.muted {
 		background: var(--color-muted-bg);
+	}
+	.tint {
+		background: linear-gradient(160deg, var(--color-tint), var(--color-muted-bg));
 	}
 </style>
