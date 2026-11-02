@@ -16,7 +16,7 @@ export const site = {
 	owner: {
 		name: 'Gwendolyn Barber',
 		credentials: 'MT-BC, LPMT',
-		title: 'Board-Certified & Illinois-Licensed Music Therapist'
+		title: 'Board Certified Music Therapist & Licensed Professional Music Therapist'
 	},
 
 	contact: {

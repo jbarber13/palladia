@@ -45,13 +45,15 @@
 			</ul>
 			<h3>Certification &amp; licensure</h3>
 			<ul>
+				<!-- Wording per CBMT (cbmt.org) -->
 				<li>
-					<strong>MT-BC</strong> — Music Therapist–Board Certified, a national credential from the Certification
-					Board for Music Therapists (CBMT)
+					<strong>MT-BC</strong> — Music Therapist-Board Certified, Certification Board for Music Therapists
+					(CBMT)
 				</li>
+				<!-- Wording per the Illinois Music Therapy Licensing and Practice Act, 225 ILCS 56 -->
 				<li>
-					<!-- TODO: confirm exact license title with client -->
-					<strong>LPMT</strong> — Licensed Practicing Music Therapist, State of Illinois
+					<strong>LPMT</strong> — Licensed Professional Music Therapist, Illinois Department of Financial
+					and Professional Regulation (IDFPR)
 				</li>
 			</ul>
 			<h3>Professional memberships</h3>
