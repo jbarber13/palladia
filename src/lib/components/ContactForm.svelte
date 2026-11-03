@@ -85,8 +85,10 @@
 			</label>
 
 			<p id="form-privacy" class="fine-print">
-				Please don’t include detailed medical or health information in this form. By sending a
-				message you agree to our <a href={resolve('/privacy')}>privacy policy</a>.
+				To ensure your privacy, please do not include confidential medical details or personal
+				health information in this form. By sending a message you agree to our <a
+					href={resolve('/privacy')}>privacy policy</a
+				>.
 			</p>
 
 			{#if status === 'error'}
