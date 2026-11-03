@@ -125,8 +125,13 @@ Still to do (client content and one-time setup):
 - [ ] Real copy from the client: bio, approach, the story behind the name and owl, tagline, service area, and real service details. Draft text is in place and marked with `TODO` comments.
 - [ ] Photos: headshot and any service or session photos, plus a vector or transparent logo (see "Images & logo").
 - [ ] Payment, insurance, cancellation policy, hours, and social links (Services and Contact pages).
-- [ ] Privacy policy review, including message retention and who receives form messages.
-- [ ] Google Search Console: add `https://palladiamt.com` and submit `https://palladiamt.com/sitemap.xml`.
+- [ ] Privacy policy review by the owner, including the message-retention wording (marked `TODO` in `src/routes/privacy/+page.svelte`).
 - [ ] Google Business Profile for local search (same phone and website as the site).
-- [ ] Google Workspace admin: confirm DKIM signing is on (Apps → Google Workspace → Gmail → Authenticate email).
 - [ ] Optional: IPv6 `AAAA` records (`2606:50c0:8000::153` through `…8003::153`), and tightening DMARC after a few weeks of reports.
+
+Done:
+
+- [x] Custom domain `palladiamt.com` with HTTPS, domain verified on GitHub.
+- [x] Contact form live on Formspree; messages are delivered to gwen@palladiamt.com.
+- [x] Email authentication: SPF, DKIM (signing confirmed on in Google Workspace), and DMARC (`p=none`).
+- [x] Google Search Console set up with the sitemap submitted.
