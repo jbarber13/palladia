@@ -72,11 +72,11 @@
 				<input name="phone" type="tel" autocomplete="tel" />
 			</label>
 			<label>
-				I’m interested in
+				I’m Interested In:
 				<select name="interest">
-					<option>Individual sessions</option>
-					<option>Group sessions</option>
-					<option>Not sure yet</option>
+					<option>Individual Sessions</option>
+					<option>Group Sessions</option>
+					<option>Not Sure Yet</option>
 				</select>
 			</label>
 			<label>
