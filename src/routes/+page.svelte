@@ -49,7 +49,7 @@
 	<!-- TODO: add a headshot or session photo beside this text (see README → Images) -->
 	<div class="intro">
 		<div>
-			<h2>What is music therapy?</h2>
+			<h2>What is Music Therapy?</h2>
 			<!-- TODO: client to review the draft intro copy -->
 			<p>
 				Music therapy is the clinical, evidence-based use of music to help people reach
