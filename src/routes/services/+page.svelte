@@ -8,13 +8,13 @@
 
 <Seo
 	title="Services"
-	description="Individual and group music therapy sessions from {site.name}, serving Lake County, IL & Kenosha County, WI."
+	description="Individual and group music therapy sessions from {site.name}, serving Lake County, IL."
 />
 
 <!-- TODO: services intro copy -->
 <Hero
 	title="Services"
-	subtitle="Individualized music therapy for clients, families, and organizations across Lake County, IL & Kenosha County, WI."
+	subtitle="Individualized music therapy for clients, families, and organizations across Lake County, IL."
 	image={null}
 />
 
@@ -44,7 +44,7 @@
 		</dd>
 		<!-- TODO: payment methods / insurance, free consultation, cancellation policy -->
 	</dl>
-	<p>Serving: {site.serviceArea.join(' & ')}.</p>
+	<p>Serving: {site.serviceArea.join(', ')}.</p>
 	<a class="button" href={resolve('/contact')}>Request a consultation</a>
 </Section>
 

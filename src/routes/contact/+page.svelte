@@ -8,7 +8,7 @@
 
 <Seo
 	title="Contact"
-	description="Contact {site.name} to schedule a consultation for individual or group music therapy in Lake County, IL & Kenosha County, WI."
+	description="Contact {site.name} to schedule a consultation for individual or group music therapy in Lake County, IL."
 />
 
 <!-- TODO: contact intro copy -->
@@ -28,7 +28,7 @@
 				<dt>Email</dt>
 				<dd><a href="mailto:{site.contact.email}">{site.contact.email}</a></dd>
 				<dt>Service area</dt>
-				<dd>{site.serviceArea.join(' & ')}</dd>
+				<dd>{site.serviceArea.join(', ')}</dd>
 				<!-- TODO: hours, if desired -->
 			</dl>
 		</div>

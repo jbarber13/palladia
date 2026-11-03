@@ -22,7 +22,7 @@
 			<p>
 				<a href="tel:{site.contact.phone.replace(/[^\d+]/g, '')}">{site.contact.phone}</a><br />
 				<a href="mailto:{site.contact.email}">{site.contact.email}</a><br />
-				Serving {site.serviceArea.join(' & ')}
+				Serving {site.serviceArea.join(', ')}
 			</p>
 		</div>
 

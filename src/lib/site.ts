@@ -9,9 +9,9 @@ export const site = {
 	shortName: 'Palladia',
 	/** Production URL, no trailing slash. Used for canonical links and the sitemap. */
 	url: 'https://palladiamt.com',
-	tagline: 'Individual and group music therapy in Lake County, IL & Kenosha County, WI', // TODO: final tagline
+	tagline: 'Individual and group music therapy in Lake County, IL', // TODO: final tagline
 	description:
-		'Palladia Music Therapy offers individual and group music therapy sessions for clients across Lake County, IL & Kenosha County, WI.', // TODO: used as default meta description
+		'Palladia Music Therapy offers individual and group music therapy sessions for clients across Lake County, IL.', // TODO: used as default meta description
 
 	owner: {
 		name: 'Gwendolyn Barber',
@@ -27,7 +27,7 @@ export const site = {
 		region: 'IL'
 	},
 
-	serviceArea: ['Lake County, IL', 'Kenosha County, WI'], // TODO
+	serviceArea: ['Lake County, IL'], // TODO
 
 	/**
 	 * Contact form backend (GitHub Pages can't process forms itself). See README → "Contact form".

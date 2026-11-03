@@ -24,10 +24,9 @@
 			<!-- TODO: client to review and personalize the draft bio -->
 			<p>
 				{site.owner.name} is a board-certified and Illinois-licensed music therapist who founded
-				{site.name} to bring individual and group music therapy to people across Lake County, IL & Kenosha
-				County, WI. She holds a Bachelor of Music Therapy from Radford University and uses music experiences
-				— singing, playing instruments, songwriting, improvisation, and movement — to support each client’s
-				goals.
+				{site.name} to bring individual and group music therapy to people across Lake County, IL. She
+				holds a Bachelor of Music Therapy from Radford University and uses music experiences — singing,
+				playing instruments, songwriting, improvisation, and movement — to support each client’s goals.
 			</p>
 			<p>
 				Each client begins with an assessment of their strengths and needs, followed by an
