@@ -87,13 +87,15 @@
 			<h2>The name &amp; the owl</h2>
 			<!-- TODO: client to confirm or replace the draft story of the name and the owl -->
 			<p>
-				The owl has long stood for wisdom, watchfulness, and careful listening — qualities at the
-				heart of music therapy. Good therapy begins with listening closely, to the person and to the
-				music they bring.
+				The name Palladia draws on Pallas Athena, the Greek goddess of wisdom, whose constant
+				companion was the owl. In Greek myth and across many cultures since, the owl has stood for
+				wisdom, guidance, and the ability to see clearly where others cannot.
 			</p>
 			<p>
-				In the logo, a musical staff wraps around the owl, a reminder that music is the path through
-				which the work happens: a steady, supportive way to express, connect, and grow.
+				Those qualities are at the heart of music therapy, which begins with attentive listening —
+				to the person and to the music they bring. In the logo, a musical staff wraps around the
+				owl, a reminder that music is the path through which the work happens: a steady, supportive
+				way to express, connect, and grow.
 			</p>
 		</div>
 	</div>
