@@ -21,7 +21,7 @@
 <Section>
 	<div class="grid-2 top">
 		<div>
-			<h2>Get in touch</h2>
+			<h2>Get in Touch</h2>
 			<dl>
 				<dt>Phone</dt>
 				<dd><a href="tel:{site.contact.phone.replace(/[^\d+]/g, '')}">{site.contact.phone}</a></dd>
