@@ -41,12 +41,12 @@
 <Section tone="muted">
 	<div class="grid-2 top">
 		<div>
-			<h2>Education &amp; credentials</h2>
+			<h2>Education &amp; Credentials</h2>
 			<h3>Education</h3>
 			<ul>
 				<li>Bachelor of Music Therapy, Radford University</li>
 			</ul>
-			<h3>Certification &amp; licensure</h3>
+			<h3>Certification &amp; Licensure</h3>
 			<ul>
 				<!-- Wording per CBMT (cbmt.org) -->
 				<li>
@@ -59,13 +59,13 @@
 					and Professional Regulation (IDFPR)
 				</li>
 			</ul>
-			<h3>Professional memberships</h3>
+			<h3>Professional Memberships</h3>
 			<ul>
 				<li>American Music Therapy Association (AMTA)</li>
 			</ul>
 		</div>
 		<div>
-			<h2>Our approach</h2>
+			<h2>Our Approach</h2>
 			<!-- TODO: client to review the draft philosophy / values copy -->
 			<p>
 				Music therapy at {site.shortName} is client-centered: it starts with who you are, what matters
@@ -84,7 +84,7 @@
 	<div class="grid-2 name-story">
 		<div class="story-logo"><Logo size={280} /></div>
 		<div>
-			<h2>The name &amp; the owl</h2>
+			<h2>The Name &amp; the Owl</h2>
 			<!-- TODO: client to confirm or replace the draft story of the name and the owl -->
 			<p>
 				The name Palladia draws on Pallas Athena, the Greek goddess of wisdom, whose constant
@@ -104,7 +104,7 @@
 <Section>
 	<div class="cta">
 		<div class="cta-logo"><Logo size={72} alt="" /></div>
-		<h2>Let’s talk</h2>
+		<h2>Let’s Talk</h2>
 		<a class="button" href={resolve('/contact')}>Contact {site.shortName}</a>
 	</div>
 </Section>
