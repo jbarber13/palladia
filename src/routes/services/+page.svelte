@@ -34,7 +34,7 @@
 {/each}
 
 <Section>
-	<h2>Rates &amp; scheduling</h2>
+	<h2>Rates &amp; Scheduling</h2>
 	<dl class="facts">
 		<dt>Session length</dt>
 		<dd>Based on each client’s needs; most sessions run 30–45 minutes.</dd>
