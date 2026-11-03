@@ -65,7 +65,10 @@
 				experience required. Because the music therapist tailors sessions to each person’s unique
 				needs, strengths, and preferences, everyone can participate and benefit.
 			</p>
-			<a href={resolve('/about')}>Meet {site.owner.name}, {site.owner.credentials} &rarr;</a>
+			<p>
+				Interested in how music therapy can support you, a loved one, or your organization?<br />
+				<a href={resolve('/contact')}>Contact us today to learn more! &rarr;</a>
+			</p>
 		</div>
 	</div>
 </Section>
