@@ -33,7 +33,7 @@
 
 <!-- TODO: final headline and intro copy -->
 <Hero
-	title="Music therapy that meets you where you are"
+	title="Music Therapy That Meets You Where You Are"
 	subtitle="{site.name} provides individual and group music therapy sessions throughout Lake County, IL & Kenosha County, WI."
 	image={logo}
 	imageAlt="{site.name} logo: an owl surrounded by musical notes"
@@ -89,7 +89,7 @@
 <Section>
 	<div class="cta">
 		<div class="cta-logo"><Logo size={88} alt="" /></div>
-		<h2>Ready to get started?</h2>
+		<h2>Ready to Get Started?</h2>
 		<!-- TODO: CTA copy -->
 		<p>Reach out for a free phone consultation to talk about goals and next steps.</p>
 		<a class="button" href={resolve('/contact')}>Get in touch</a>
