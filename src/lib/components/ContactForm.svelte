@@ -68,7 +68,7 @@
 				<input name="email" type="email" autocomplete="email" required />
 			</label>
 			<label>
-				Phone <span class="optional">(optional)</span>
+				Phone
 				<input name="phone" type="tel" autocomplete="tel" />
 			</label>
 			<label>
@@ -115,10 +115,6 @@
 		display: grid;
 		gap: 0.25rem;
 		font-weight: 600;
-	}
-	.optional {
-		font-weight: 400;
-		color: var(--color-text-muted);
 	}
 	input,
 	select,
