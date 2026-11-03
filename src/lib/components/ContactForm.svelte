@@ -36,7 +36,7 @@
 	{onsubmit}
 	aria-describedby="form-privacy"
 >
-	<h2>Send a message</h2>
+	<h2>Send Us A Message!</h2>
 
 	{#if !ready}
 		<p class="notice">The online form isn’t connected yet — please call or email.</p>
