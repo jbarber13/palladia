@@ -4,7 +4,6 @@
 	import Seo from '#lib/components/Seo.svelte';
 	import Hero from '#lib/components/Hero.svelte';
 	import Section from '#lib/components/Section.svelte';
-	import Image from '#lib/components/Image.svelte';
 	import Logo from '#lib/components/Logo.svelte';
 </script>
 
@@ -17,8 +16,8 @@
 <Hero title="About {site.shortName}" subtitle={site.tagline} image={null} />
 
 <Section>
-	<div class="grid-2 bio">
-		<Image alt="Photo of {site.owner.name}" ratio="4 / 5" label="Headshot placeholder" />
+	<!-- TODO: add a headshot beside the bio (see README → Images) -->
+	<div class="bio">
 		<div>
 			<h2>{site.owner.name}, {site.owner.credentials}</h2>
 			<p class="role">{site.owner.title}</p>
@@ -111,12 +110,7 @@
 
 <style>
 	.bio {
-		grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
-	}
-	@media (max-width: 48rem) {
-		.bio {
-			grid-template-columns: 1fr;
-		}
+		max-width: 46rem;
 	}
 	.top {
 		align-items: start;

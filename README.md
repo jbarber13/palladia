@@ -40,7 +40,7 @@ Find all placeholder content with: `grep -rn TODO src`
    <Image src={asset('images/headshot.jpg')} alt="Photo of ..." ratio="1 / 1" />
    ```
 
-   Without `src`, `Image` renders a striped placeholder box.
+   Without `src`, `Image` renders nothing. The Home, About, and Services pages currently have no photo column; to add one, put an `Image` back in a `grid-2` layout next to the text (see the `TODO: add a ... photo` comments in those pages).
 
 3. **Logo:** `src/assets/Logo.svg` is the original from the client. It's actually a 2048px JPEG inside an SVG wrapper (1.35 MB), so the site uses resized, transparent-cutout copies instead (`logo-160.webp`, `logo-640.webp`, `favicon.png`, plus `static/apple-touch-icon.png` and `static/og-image.jpg`). Regenerate those if the logo changes. A true vector logo from the designer would be better.
 

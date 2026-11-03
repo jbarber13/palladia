@@ -4,7 +4,6 @@
 	import Seo from '#lib/components/Seo.svelte';
 	import Hero from '#lib/components/Hero.svelte';
 	import Section from '#lib/components/Section.svelte';
-	import Image from '#lib/components/Image.svelte';
 	import logo from '#assets/logo-640.webp';
 	import Logo from '#lib/components/Logo.svelte';
 
@@ -47,8 +46,8 @@
 </Hero>
 
 <Section>
-	<div class="grid-2">
-		<Image alt="Photo of {site.owner.name}" ratio="1 / 1" label="Headshot placeholder" />
+	<!-- TODO: add a headshot or session photo beside this text (see README → Images) -->
+	<div class="intro">
 		<div>
 			<h2>What is music therapy?</h2>
 			<!-- TODO: client to review the draft intro copy -->
@@ -95,6 +94,9 @@
 		display: grid;
 		gap: var(--space-3);
 		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+	}
+	.intro {
+		max-width: 46rem;
 	}
 	.cta-logo {
 		display: flex;

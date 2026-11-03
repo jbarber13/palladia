@@ -4,7 +4,6 @@
 	import Seo from '#lib/components/Seo.svelte';
 	import Hero from '#lib/components/Hero.svelte';
 	import Section from '#lib/components/Section.svelte';
-	import Image from '#lib/components/Image.svelte';
 </script>
 
 <Seo
@@ -21,19 +20,15 @@
 
 {#each services as service, i (service.title)}
 	<Section tone={i % 2 ? 'muted' : 'default'}>
-		<div class="grid-2">
-			<div class:flip={i % 2}>
-				<Image alt={service.title} label="{service.title} image placeholder" />
-			</div>
-			<div>
-				<h2>{service.title}</h2>
-				<p>{service.summary}</p>
-				<ul>
-					{#each service.details as detail (detail)}
-						<li>{detail}</li>
-					{/each}
-				</ul>
-			</div>
+		<!-- TODO: add a photo for each service (see README → Images) -->
+		<div class="service">
+			<h2>{service.title}</h2>
+			<p>{service.summary}</p>
+			<ul>
+				{#each service.details as detail (detail)}
+					<li>{detail}</li>
+				{/each}
+			</ul>
 		</div>
 	</Section>
 {/each}
@@ -74,9 +69,7 @@
 			margin-bottom: var(--space-1);
 		}
 	}
-	@media (min-width: 48rem) {
-		.flip {
-			order: 2;
-		}
+	.service {
+		max-width: 46rem;
 	}
 </style>

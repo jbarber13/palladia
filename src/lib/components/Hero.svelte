@@ -6,7 +6,7 @@
 	type Props = {
 		title: string;
 		subtitle?: string;
-		/** Image URL. Omit to show a placeholder; pass `null` to hide the image column entirely. */
+		/** Image URL. Omit or pass `null` for a text-only banner. */
 		image?: string | null;
 		imageAlt?: string;
 		imageRatio?: string;
@@ -26,22 +26,15 @@
 </script>
 
 <section class="hero">
-	<div class="container" class:grid-2={image !== null}>
+	<div class="container" class:grid-2={!!image}>
 		<div>
 			<h1>{title}</h1>
 			{#if subtitle}<p class="subtitle">{subtitle}</p>{/if}
 			{#if children}<div class="actions">{@render children()}</div>{/if}
 		</div>
-		{#if image !== null}
+		{#if image}
 			<div class="media">
-				<Image
-					src={image}
-					alt={imageAlt}
-					ratio={imageRatio}
-					fit={imageFit}
-					loading="eager"
-					label="Hero image placeholder"
-				/>
+				<Image src={image} alt={imageAlt} ratio={imageRatio} fit={imageFit} loading="eager" />
 			</div>
 		{/if}
 	</div>
