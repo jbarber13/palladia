@@ -12,7 +12,7 @@
 <Section>
 	<div class="center">
 		<div class="logo"><Logo size={160} alt="" loading="eager" /></div>
-		<h1>{page.status === 404 ? 'Page not found' : 'Something went wrong'}</h1>
+		<h1>{page.status === 404 ? 'Page Not Found' : 'Something Went Wrong'}</h1>
 		<p>Sorry, we couldn’t find what you were looking for.</p>
 		<a class="button" href={resolve('/')}>Back to home</a>
 	</div>
