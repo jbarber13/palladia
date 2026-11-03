@@ -23,13 +23,13 @@ npm run format     # auto-format code
 | Colors, fonts, spacing                          | CSS variables at the top of `src/app.css`           |
 | Page copy                                       | `src/routes/**/+page.svelte` (search for `TODO`)    |
 | Header / footer                                 | `src/lib/components/Header.svelte`, `Footer.svelte` |
-| Favicon                                         | `src/lib/assets/favicon.svg`                        |
+| Favicon                                         | `src/assets/favicon.png`                            |
 
-Find all placeholder content with: `grep -rn TODO src`
+Find copy and images still waiting on the client with: `grep -rn TODO src`
 
 ### Images & logo
 
-1. Put files in `static/images/` (e.g. `static/images/headshot.jpg`).
+1. Put files in `static/images/` (create the folder if it doesn't exist, e.g. `static/images/headshot.jpg`). Resize photos first (about 1600px on the long edge, JPEG or WebP) to keep pages fast.
 2. Pass them to the `Image` / `Hero` components using `asset()`:
 
    ```svelte
@@ -48,7 +48,7 @@ Always use `resolve('/page')` for internal links and `asset('file')` for static 
 
 ### Contact form
 
-GitHub Pages can't process form submissions, so the form posts to a third-party service. Until `contactForm.id` in `src/lib/site.ts` is set, the form is displayed but disabled.
+GitHub Pages can't process form submissions, so the form posts to a third-party service. **The live form uses Formspree** (form ID `xjyyplwp`, set as `contactForm.id` in `src/lib/site.ts`). If `contactForm.id` is ever empty, the form is displayed but disabled. Submissions and settings (recipient email, allowed domain, spam filtering) are managed in the Formspree dashboard, not in this repo.
 
 Two providers are supported out of the box (switch with `contactForm.provider`):
 
@@ -60,13 +60,15 @@ Two providers are supported out of the box (switch with `contactForm.provider`):
 | Restrict to your domain  | Yes (free)           | Paid only            |
 | Paid tier                | from $10/mo (200/mo) | from $12/mo (10k/mo) |
 
-**Setup (Formspree):**
+**Setting up a new Formspree form** (for example, if the account changes):
 
 1. Sign up at <https://formspree.io> using the inbox that should receive messages, and verify it.
 2. Create a form → copy the ID from its endpoint (`https://formspree.io/f/<ID>`).
 3. Paste it into `contactForm.id`, commit, and push.
-4. In Formspree form settings, enable **Restrict to domain** → `palladiamt.com` (the live domain; `www` redirects, so the form is only submitted from `palladiamt.com`).
-5. Send a test message from the live site.
+4. In Formspree form settings, enable **Restrict to domain** → `palladiamt.com` (`www` redirects, so the form is only submitted from `palladiamt.com`).
+5. Send a test message from the live site and check it isn't in spam.
+
+If submissions fail with a captcha error, turn off reCAPTCHA in the Formspree form settings (the form submits in the background and can't show it). The hidden honeypot field and Formspree's spam filter still apply.
 
 **Setup (Web3Forms):** create an access key at <https://web3forms.com>, set `provider: 'web3forms'` and paste the key into `id`. (The key is designed to be public.)
 
@@ -76,7 +78,7 @@ The form includes a hidden honeypot field for spam, an inline success/error mess
 
 ### Privacy policy
 
-`src/routes/privacy/+page.svelte` is a boilerplate policy covering the contact form and hosting. Review it with the owner before launch, update `privacyPolicyUpdated` in `site.ts` when it changes, and revise it if analytics, cookies, embeds, or a newsletter are ever added.
+`src/routes/privacy/+page.svelte` is a boilerplate policy covering the contact form and hosting. It still needs review by the owner (ideally an attorney), including how long messages are kept and who receives them. Update `privacyPolicyUpdated` in `site.ts` whenever it changes, and revise it if analytics, cookies, embeds, or a newsletter are ever added.
 
 ### Domain
 
@@ -90,7 +92,11 @@ DNS is managed in Squarespace (Domains → palladiamt.com → DNS Settings). Rec
 | `www`                               | CNAME | `jbarber13.github.io`                                                                     |
 | `_github-pages-challenge-jbarber13` | TXT   | domain-verification code from GitHub (Settings → Pages)                                   |
 | `@`                                 | MX    | `smtp.google.com` (priority 1) - **Google Workspace email, do not remove**                |
-| `@`                                 | TXT   | `v=spf1 include:_spf.google.com ~all` - **email, do not remove**                          |
+| `@`                                 | TXT   | `v=spf1 include:_spf.google.com ~all` - **email (SPF), do not remove**                    |
+| `google._domainkey`                 | TXT   | Google Workspace DKIM key - **email, do not remove**                                      |
+| `_dmarc`                            | TXT   | `v=DMARC1; p=none; rua=mailto:gwen@palladiamt.com` - email policy, monitor only           |
+
+Everything except the first three rows belongs to Google Workspace email. Don't delete those when changing the website's DNS. `_dmarc` is set to `p=none` (monitor only); it can be tightened to `quarantine` later once the reports look clean.
 
 The custom domain is set under GitHub **Settings → Pages**, with **Enforce HTTPS** on (the certificate renews automatically). The deploy workflow drops the `/palladia` base path on its own when a custom domain is set. If the domain ever stops working, check those settings first and then the DNS records above.
 
@@ -100,10 +106,27 @@ Create `src/routes/<name>/+page.svelte` (copy an existing page as a starting poi
 
 ## Deploying (GitHub Pages)
 
-1. Create a GitHub repo and push this project to `main`.
-2. On GitHub: **Settings → Pages → Source: GitHub Actions**.
-3. Every push to `main` runs `.github/workflows/deploy.yml`, which builds and publishes the site.
+Hosting is already set up (**Settings → Pages → Source: GitHub Actions**). Every push to `main` runs `.github/workflows/deploy.yml`, which builds and publishes the site in about a minute. There is no staging site; test changes locally with `npm run dev`, or `npm run build && npm run preview`. You can also re-run a deploy manually from the repo's **Actions** tab (the workflow supports manual runs). GitHub caches pages for about 10 minutes, so changes can take a little while to appear.
 
 The workflow sets `BASE_PATH` automatically (e.g. `/palladia` for `https://<user>.github.io/palladia`). With the custom domain set under Settings → Pages (as it is now), the base path is empty and the site serves from the root.
 
 To test a sub-path build locally: `BASE_PATH=/palladia npm run build`.
+
+## Known limitations
+
+- **Trailing slashes:** pages are served without one (`/about`). Typing `/about/` shows the 404 page. All internal links, canonical URLs, and the sitemap use the no-slash form, so only hand-typed URLs are affected. Changing it would mean setting `trailingSlash: 'always'` and changing every indexed URL, so it's left alone.
+- **No custom response headers:** GitHub Pages can't set security headers such as a Content-Security-Policy. This is acceptable for a static brochure site with no logins.
+- **No analytics or cookies.** If that changes, update the privacy policy.
+
+## Open items
+
+Still to do (client content and one-time setup):
+
+- [ ] Real copy from the client: bio, approach, the story behind the name and owl, tagline, service area, and real service details. Draft text is in place and marked with `TODO` comments.
+- [ ] Photos: headshot and any service or session photos, plus a vector or transparent logo (see "Images & logo").
+- [ ] Payment, insurance, cancellation policy, hours, and social links (Services and Contact pages).
+- [ ] Privacy policy review, including message retention and who receives form messages.
+- [ ] Google Search Console: add `https://palladiamt.com` and submit `https://palladiamt.com/sitemap.xml`.
+- [ ] Google Business Profile for local search (same phone and website as the site).
+- [ ] Google Workspace admin: confirm DKIM signing is on (Apps → Google Workspace → Gmail → Authenticate email).
+- [ ] Optional: IPv6 `AAAA` records (`2606:50c0:8000::153` through `…8003::153`), and tightening DMARC after a few weeks of reports.
