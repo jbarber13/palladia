@@ -53,13 +53,17 @@
 			<!-- TODO: client to review the draft intro copy -->
 			<p>
 				Music therapy is the clinical, evidence-based use of music to help people reach
-				individualized goals — emotional, cognitive, social, communicative, and physical — guided by
-				a credentialed professional.
+				individualized, non-musical goals guided by a Board Certified Music Therapist (MT-BC). These
+				goals can be rooted in the emotional, cognitive, social, communicative, spiritual, and
+				physical domains. Ongoing progress is documented by the music therapist to guide the
+				clinical process, so that they may continuously adapt interventions and goals as clients
+				grow. Interventions may include singing, instrument playing, songwriting, improvisation,
+				movement, music listening, relaxation, and musical games.
 			</p>
 			<p>
-				Sessions are shaped around each person’s needs, strengths, and musical preferences, and may
-				include singing, instrument playing, songwriting, improvisation, movement, and listening.
-				{site.name} works with children, teens, and adults. No musical experience is needed to benefit.
+				Music therapy is accessible to people of all ages and abilities, with no prior musical
+				experience required. Because the music therapist tailors sessions to each person’s unique
+				needs, strengths, and preferences, everyone can participate and benefit.
 			</p>
 			<a href={resolve('/about')}>Meet {site.owner.name}, {site.owner.credentials} &rarr;</a>
 		</div>
