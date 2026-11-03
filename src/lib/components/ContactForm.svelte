@@ -60,7 +60,7 @@
 			</label>
 
 			<label>
-				Name
+				First &amp; Last Name
 				<input name="name" type="text" autocomplete="name" required />
 			</label>
 			<label>
