@@ -22,14 +22,17 @@
 		<div>
 			<h2>{site.owner.name}, {site.owner.credentials}</h2>
 			<p class="role">{site.owner.title}</p>
-			<!-- TODO: bio copy -->
+			<!-- TODO: client to review and personalize the draft bio -->
 			<p>
-				Placeholder bio. Introduce yourself, your background in music and therapy, and what led you
-				to start {site.name}.
+				{site.owner.name} is a board-certified and Illinois-licensed music therapist who founded
+				{site.name} to bring individual and group music therapy to people across the Chicagoland area.
+				She holds a Bachelor of Music Therapy from Radford University and uses music experiences — singing,
+				playing instruments, songwriting, improvisation, and movement — to support each client’s goals.
 			</p>
 			<p>
-				Placeholder: describe your therapeutic approach, the populations you work with, and what a
-				client or family can expect.
+				Each client begins with an assessment of their strengths and needs, followed by an
+				individualized plan. Sessions are flexible and adapt as goals change. Families and care
+				teams are kept informed along the way, and no musical background is required.
 			</p>
 		</div>
 	</div>
@@ -63,10 +66,15 @@
 		</div>
 		<div>
 			<h2>Our approach</h2>
-			<!-- TODO: philosophy / values copy -->
+			<!-- TODO: client to review the draft philosophy / values copy -->
 			<p>
-				Placeholder: a short paragraph about values — client-centered care, collaboration with
-				families and care teams, measurable goals, etc.
+				Music therapy at {site.shortName} is client-centered: it starts with who you are, what matters
+				to you, and the music you connect with. Goals are clear and measurable, progress is reviewed regularly,
+				and care is coordinated with families, caregivers, schools, and healthcare teams when that helps.
+			</p>
+			<p>
+				Every session is built on respect, collaboration, and the belief that music can reach people
+				in ways words sometimes can’t.
 			</p>
 		</div>
 	</div>
@@ -77,14 +85,15 @@
 		<div class="story-logo"><Logo size={280} /></div>
 		<div>
 			<h2>The name &amp; the owl</h2>
-			<!-- TODO: client to explain the meaning of "Palladia" and the owl logo -->
+			<!-- TODO: client to confirm or replace the draft story of the name and the owl -->
 			<p>
-				Placeholder: the story behind the name “Palladia” and the owl, e.g. what it represents —
-				wisdom, attentive listening, guidance — and how that connects to the practice.
+				The owl has long stood for wisdom, watchfulness, and careful listening — qualities at the
+				heart of music therapy. Good therapy begins with listening closely, to the person and to the
+				music they bring.
 			</p>
 			<p>
-				Placeholder: a sentence about the musical staff that wraps the owl and the role of music in
-				the work.
+				In the logo, a musical staff wraps around the owl, a reminder that music is the path through
+				which the work happens: a steady, supportive way to express, connect, and grow.
 			</p>
 		</div>
 	</div>

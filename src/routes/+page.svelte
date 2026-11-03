@@ -51,15 +51,16 @@
 		<Image alt="Photo of {site.owner.name}" ratio="1 / 1" label="Headshot placeholder" />
 		<div>
 			<h2>What is music therapy?</h2>
-			<!-- TODO: intro copy -->
+			<!-- TODO: client to review the draft intro copy -->
 			<p>
 				Music therapy is the clinical, evidence-based use of music to help people reach
 				individualized goals — emotional, cognitive, social, communicative, and physical — guided by
 				a credentialed professional.
 			</p>
 			<p>
-				Placeholder: a sentence or two about the practice’s approach and who it serves. No musical
-				experience is needed to benefit.
+				Sessions are shaped around each person’s needs, strengths, and musical preferences, and may
+				include singing, instrument playing, songwriting, improvisation, movement, and listening.
+				{site.name} works with children, teens, and adults. No musical experience is needed to benefit.
 			</p>
 			<a href={resolve('/about')}>Meet {site.owner.name}, {site.owner.credentials} &rarr;</a>
 		</div>
