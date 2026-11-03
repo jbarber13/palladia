@@ -34,7 +34,7 @@
 <!-- TODO: final headline and intro copy -->
 <Hero
 	title="Music therapy that meets you where you are"
-	subtitle="{site.name} provides individual and group music therapy sessions throughout the Chicagoland area."
+	subtitle="{site.name} provides individual and group music therapy sessions throughout Lake County, IL & Kenosha County, WI."
 	image={logo}
 	imageAlt="{site.name} logo: an owl surrounded by musical notes"
 	imageRatio="1 / 1"
