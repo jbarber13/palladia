@@ -11,6 +11,8 @@
 		imageAlt?: string;
 		imageRatio?: string;
 		imageFit?: 'cover' | 'contain';
+		/** Center the text block (headline, intro, buttons). */
+		centered?: boolean;
 		children?: Snippet;
 	};
 
@@ -21,6 +23,7 @@
 		imageAlt = 'Hero image',
 		imageRatio,
 		imageFit,
+		centered = false,
 		children
 	}: Props = $props();
 
@@ -29,7 +32,7 @@
 
 <section class="hero">
 	<div class="container" class:grid-2={!!image}>
-		<div>
+		<div class:centered>
 			<!-- A newline in the title becomes a line break; the space keeps words apart for screen readers. -->
 			<h1>
 				{#each lines as line, i (i)}{line}{#if i < lines.length - 1}{' '}<br />{/if}{/each}
@@ -67,5 +70,14 @@
 		flex-wrap: wrap;
 		gap: var(--space-2);
 		margin-top: var(--space-3);
+	}
+	.centered {
+		text-align: center;
+	}
+	.centered .subtitle {
+		margin-inline: auto;
+	}
+	.centered .actions {
+		justify-content: center;
 	}
 </style>

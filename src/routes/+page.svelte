@@ -39,6 +39,7 @@
 	imageAlt="{site.name} logo: an owl surrounded by musical notes"
 	imageRatio="1 / 1"
 	imageFit="contain"
+	centered
 >
 	<!-- TODO: swap the logo for a hero photo once available (and drop imageRatio/imageFit) -->
 	<a class="button" href={resolve('/contact')}>Schedule a Consultation</a>
