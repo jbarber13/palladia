@@ -8,6 +8,9 @@
 
 	let open = $state(false);
 
+	// On phones the title shows as two lines: first word, then the rest
+	const [firstWord, ...restWords] = site.name.split(' ');
+
 	// Close the mobile menu after clicking a link
 	afterNavigate(() => (open = false));
 </script>
@@ -17,7 +20,11 @@
 		<a class="brand" href={resolve('/')}>
 			<!-- alt is empty because the visible name next to it already labels the link -->
 			<Logo size={56} alt="" loading="eager" />
-			<span>{site.name}</span>
+			<span
+				>{firstWord}<br class="mobile-break" />{' '}<span class="keep-together"
+					>{restWords.join(' ')}</span
+				></span
+			>
 		</a>
 
 		<button
@@ -74,6 +81,9 @@
 		color: var(--color-heading);
 		text-decoration: none;
 		padding-block: 0.5rem;
+	}
+	.mobile-break {
+		display: none;
 	}
 	@media (max-width: 24rem) {
 		.brand {
@@ -140,6 +150,12 @@
 			/* let the title shrink/wrap so the menu button stays on the same row */
 			flex: 1 1 0;
 			min-width: 0;
+		}
+		.mobile-break {
+			display: inline;
+		}
+		.keep-together {
+			white-space: nowrap;
 		}
 		nav {
 			display: none;
