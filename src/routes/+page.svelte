@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { asset, resolve } from '$app/paths';
 	import { site, services } from '#lib/site.ts';
 	import Seo from '#lib/components/Seo.svelte';
 	import Hero from '#lib/components/Hero.svelte';
 	import Section from '#lib/components/Section.svelte';
+	import Image from '#lib/components/Image.svelte';
 	import logo from '#assets/logo-640.webp';
 	import Logo from '#lib/components/Logo.svelte';
 
@@ -48,7 +49,13 @@
 
 <Section>
 	<!-- TODO: add a headshot or session photo beside this text (see README → Images) -->
-	<div class="intro">
+	<div class="grid-2">
+		<Image
+			src={asset('images/group-piano-session.jpg')}
+			alt="Group of older adults singing and playing piano together during a music therapy session"
+			ratio="4 / 3"
+			fit="cover"
+		/>
 		<div>
 			<h2>What is Music Therapy?</h2>
 			<!-- TODO: client to review the draft intro copy -->
@@ -102,9 +109,6 @@
 		display: grid;
 		gap: var(--space-3);
 		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-	}
-	.intro {
-		max-width: 46rem;
 	}
 	.cta-logo {
 		display: flex;
