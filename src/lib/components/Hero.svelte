@@ -28,16 +28,20 @@
 	}: Props = $props();
 
 	const lines = $derived(title.split('\n'));
+	const subtitleLines = $derived(subtitle?.split('\n') ?? []);
 </script>
 
 <section class="hero">
-	<div class="container" class:grid-2={!!image}>
+	<div class="container" class:grid-2={!!image} class:wide-text={centered && !!image}>
 		<div class:centered>
 			<!-- A newline in the title becomes a line break; the space keeps words apart for screen readers. -->
 			<h1>
 				{#each lines as line, i (i)}{line}{#if i < lines.length - 1}{' '}<br />{/if}{/each}
 			</h1>
-			{#if subtitle}<p class="subtitle">{subtitle}</p>{/if}
+			{#if subtitle}<p class="subtitle">
+					{#each subtitleLines as line, i (i)}{line}{#if i < subtitleLines.length - 1}{' '}<br
+							/>{/if}{/each}
+				</p>{/if}
 			{#if children}<div class="actions">{@render children()}</div>{/if}
 		</div>
 		{#if image}
@@ -70,6 +74,12 @@
 		flex-wrap: wrap;
 		gap: var(--space-2);
 		margin-top: var(--space-3);
+	}
+	/* Give the centered text a wider column on desktop so its manual line breaks aren't re-wrapped. */
+	@media (min-width: 48rem) {
+		.wide-text {
+			grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+		}
 	}
 	.centered {
 		text-align: center;

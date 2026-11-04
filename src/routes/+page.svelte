@@ -35,7 +35,7 @@
 <!-- TODO: final headline and intro copy -->
 <Hero
 	title={'Music Therapy\nThat Meets You\nWhere You Are'}
-	subtitle="Palladia Music Therapy offers individual and group sessions throughout Lake County, IL. We truly meet you where you are in every way, bringing therapy conveniently to your location and welcoming you just as you are."
+	subtitle={'Palladia Music Therapy offers individual and group\nsessions throughout Lake County, IL.\nWe truly meet you where you are in every way,\nbringing therapy conveniently to your location\nand welcoming you just as you are.'}
 	image={logo}
 	imageAlt="{site.name} logo: an owl surrounded by musical notes"
 	imageRatio="1 / 1"
