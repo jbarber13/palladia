@@ -23,12 +23,17 @@
 		imageFit,
 		children
 	}: Props = $props();
+
+	const lines = $derived(title.split('\n'));
 </script>
 
 <section class="hero">
 	<div class="container" class:grid-2={!!image}>
 		<div>
-			<h1>{title}</h1>
+			<!-- A newline in the title becomes a line break; the space keeps words apart for screen readers. -->
+			<h1>
+				{#each lines as line, i (i)}{line}{#if i < lines.length - 1}{' '}<br />{/if}{/each}
+			</h1>
 			{#if subtitle}<p class="subtitle">{subtitle}</p>{/if}
 			{#if children}<div class="actions">{@render children()}</div>{/if}
 		</div>

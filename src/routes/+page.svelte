@@ -33,7 +33,7 @@
 
 <!-- TODO: final headline and intro copy -->
 <Hero
-	title="Music Therapy That Meets You Where You Are"
+	title={'Music Therapy\nThat Meets You\nWhere You Are'}
 	subtitle="{site.name} provides individual and group music therapy sessions throughout Lake County, IL."
 	image={logo}
 	imageAlt="{site.name} logo: an owl surrounded by musical notes"
