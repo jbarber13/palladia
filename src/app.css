@@ -47,6 +47,14 @@
 
 html {
 	scroll-behavior: smooth;
+	/* Keep jump-link targets (e.g. /services#group-sessions) clear of the sticky header (~4.6rem, or ~5.5rem on phones) plus a small gap */
+	scroll-padding-top: 6rem;
+}
+
+@media (max-width: 40rem) {
+	html {
+		scroll-padding-top: 7rem;
+	}
 }
 
 body {
