@@ -21,7 +21,7 @@
 {#each services as service, i (service.title)}
 	<Section tone={i % 2 ? 'muted' : 'default'}>
 		<!-- TODO: add a photo for each service (see README → Images) -->
-		<div class="service">
+		<div class="service" id={service.id}>
 			<h2>{service.title}</h2>
 			<p>{service.summary}</p>
 			<ul>

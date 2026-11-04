@@ -51,6 +51,8 @@ export const site = {
 };
 
 export type Service = {
+	/** Anchor on the Services page (e.g. /services#individual-sessions). */
+	id: string;
 	title: string;
 	summary: string;
 	/** Optional shorter text for the home page cards. Falls back to `summary`. */
@@ -61,6 +63,7 @@ export type Service = {
 /** Services shown on the Home and Services pages. */
 export const services: Service[] = [
 	{
+		id: 'individual-sessions',
 		title: 'Individual Sessions',
 		summary:
 			'One-on-one music therapy tailored to each client’s goals, strengths, and preferences.', // TODO
@@ -74,6 +77,7 @@ export const services: Service[] = [
 		]
 	},
 	{
+		id: 'group-sessions',
 		title: 'Group Sessions',
 		summary:
 			'Engaging group music therapy for schools, care facilities, and community organizations.', // TODO

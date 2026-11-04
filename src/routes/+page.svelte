@@ -80,7 +80,7 @@
 			<div class="card">
 				<h3>{service.title}</h3>
 				<p>{service.homeDescription ?? service.summary}</p>
-				<a href={resolve('/services')}>Learn more &rarr;</a>
+				<a href="{resolve('/services')}#{service.id}">Learn more &rarr;</a>
 			</div>
 		{/each}
 	</div>
