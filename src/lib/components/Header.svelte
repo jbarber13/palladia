@@ -134,6 +134,12 @@
 	@media (max-width: 40rem) {
 		.menu-toggle {
 			display: block;
+			flex: none;
+		}
+		.brand {
+			/* let the title shrink/wrap so the menu button stays on the same row */
+			flex: 1 1 0;
+			min-width: 0;
 		}
 		nav {
 			display: none;
