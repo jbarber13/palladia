@@ -14,7 +14,7 @@
 				<Logo size={72} alt="" />
 				<p class="name">{site.name}</p>
 			</div>
-			<p>{site.tagline}</p>
+			<p>{site.footerTagline}</p>
 		</div>
 
 		<div>

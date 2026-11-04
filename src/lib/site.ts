@@ -10,6 +10,8 @@ export const site = {
 	/** Production URL, no trailing slash. Used for canonical links and the sitemap. */
 	url: 'https://palladiamt.com',
 	tagline: 'Individual and group music therapy in Lake County, IL', // TODO: final tagline
+	/** Tagline shown in the footer only. */
+	footerTagline: 'Music Therapy That Meets You Where You Are',
 	description:
 		'Palladia Music Therapy offers individual and group music therapy sessions for clients across Lake County, IL.', // TODO: used as default meta description
 
