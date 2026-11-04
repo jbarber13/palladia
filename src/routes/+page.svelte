@@ -41,8 +41,8 @@
 	imageFit="contain"
 >
 	<!-- TODO: swap the logo for a hero photo once available (and drop imageRatio/imageFit) -->
-	<a class="button" href={resolve('/contact')}>Schedule a consultation</a>
-	<a class="button secondary" href={resolve('/services')}>Explore services</a>
+	<a class="button" href={resolve('/contact')}>Schedule a Consultation</a>
+	<a class="button secondary" href={resolve('/services')}>Explore Services</a>
 </Hero>
 
 <Section>
