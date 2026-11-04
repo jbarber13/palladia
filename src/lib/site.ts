@@ -53,6 +53,8 @@ export const site = {
 export type Service = {
 	title: string;
 	summary: string;
+	/** Optional shorter text for the home page cards. Falls back to `summary`. */
+	homeDescription?: string;
 	details: string[];
 };
 
@@ -62,6 +64,7 @@ export const services: Service[] = [
 		title: 'Individual Sessions',
 		summary:
 			'One-on-one music therapy tailored to each client’s goals, strengths, and preferences.', // TODO
+		homeDescription: 'Private, one-on-one music therapy providing focused, individualized support.',
 		details: [
 			// TODO: replace with real details
 			'Initial assessment and individualized treatment plan',
@@ -74,6 +77,7 @@ export const services: Service[] = [
 		title: 'Group Sessions',
 		summary:
 			'Engaging group music therapy for schools, care facilities, and community organizations.', // TODO
+		homeDescription: 'Interactive and engaging music therapy programs for group settings',
 		details: [
 			// TODO: replace with real details
 			'Programs designed around the needs of each group',

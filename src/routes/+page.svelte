@@ -79,7 +79,7 @@
 		{#each services as service (service.title)}
 			<div class="card">
 				<h3>{service.title}</h3>
-				<p>{service.summary}</p>
+				<p>{service.homeDescription ?? service.summary}</p>
 				<a href={resolve('/services')}>Learn more &rarr;</a>
 			</div>
 		{/each}
