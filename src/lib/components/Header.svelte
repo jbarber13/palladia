@@ -140,10 +140,6 @@
 			/* let the title shrink/wrap so the menu button stays on the same row */
 			flex: 1 1 0;
 			min-width: 0;
-			/* scale the title with screen width so it stays on one line (about 18px at 390px wide) */
-			font-size: clamp(0.75rem, calc((100vw - 164px) / 12.6), 1.35rem);
-			letter-spacing: 0.04em;
-			white-space: nowrap;
 		}
 		nav {
 			display: none;
