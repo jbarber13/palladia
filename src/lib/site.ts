@@ -84,7 +84,7 @@ export const services: Service[] = [
 		summary:
 			'Engaging group music therapy for schools, care facilities, and community organizations.', // TODO
 		homeDescription:
-			'Interactive and personalized music therapy programs for group settings of all kinds.',
+			'Interactive and customized music therapy programs for group settings of all kinds.',
 		details: [
 			// TODO: replace with real details
 			'Programs designed around the needs of each group',
