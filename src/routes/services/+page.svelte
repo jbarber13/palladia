@@ -48,7 +48,7 @@
 	</p>
 	<!-- TODO: payment methods / insurance, free consultation, cancellation policy -->
 	<p>Serving: {site.serviceArea.join(', ')}.</p>
-	<a class="button" href={resolve('/contact')}>Request a consultation</a>
+	<a class="button" href={resolve('/contact')}>Request a Consultation</a>
 </Section>
 
 <style>
