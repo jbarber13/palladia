@@ -16,6 +16,21 @@
 <Hero title="About {site.shortName}" image={null} />
 
 <Section>
+	<div class="approach">
+		<h2>Our Approach</h2>
+		<!-- TODO: client to review the draft philosophy / values copy -->
+		<p>
+			At Palladia Music Therapy, our approach is rooted in a person-centered, strength-based, and
+			humanistic philosophy. We view every client as a whole person with unique strengths and
+			inherent potential, prioritizing empathy, respect, and deep connection above all else. Because
+			no two journeys are the same, we adapt to what serves you best in the moment. For a more
+			in-depth conversation about how we can support your specific needs, please feel free to reach
+			out to us.
+		</p>
+	</div>
+</Section>
+
+<Section tone="muted">
 	<!-- TODO: add a headshot beside the bio (see README → Images) -->
 	<div class="bio">
 		<div>
@@ -37,44 +52,30 @@
 	</div>
 </Section>
 
-<Section tone="muted">
-	<div class="grid-2 top">
-		<div>
-			<h2>Education &amp; Credentials</h2>
-			<h3>Education</h3>
-			<ul>
-				<li>Bachelor of Music Therapy, Radford University</li>
-			</ul>
-			<h3>Certification &amp; Licensure</h3>
-			<ul>
-				<!-- Wording per CBMT (cbmt.org) -->
-				<li>
-					<strong>MT-BC</strong> — Music Therapist-Board Certified, Certification Board for Music Therapists
-					(CBMT)
-				</li>
-				<!-- Wording per the Illinois Music Therapy Licensing and Practice Act, 225 ILCS 56 -->
-				<li>
-					<strong>LPMT</strong> — Licensed Professional Music Therapist, Illinois Department of Financial
-					and Professional Regulation (IDFPR)
-				</li>
-			</ul>
-			<h3>Professional Memberships</h3>
-			<ul>
-				<li>American Music Therapy Association (AMTA)</li>
-			</ul>
-		</div>
-		<div>
-			<h2>Our Approach</h2>
-			<!-- TODO: client to review the draft philosophy / values copy -->
-			<p>
-				At Palladia Music Therapy, our approach is rooted in a person-centered, strength-based, and
-				humanistic philosophy. We view every client as a whole person with unique strengths and
-				inherent potential, prioritizing empathy, respect, and deep connection above all else.
-				Because no two journeys are the same, we adapt to what serves you best in the moment. For a
-				more in-depth conversation about how we can support your specific needs, please feel free to
-				reach out to us.
-			</p>
-		</div>
+<Section>
+	<div class="education">
+		<h2>Education &amp; Credentials</h2>
+		<h3>Education</h3>
+		<ul>
+			<li>Bachelor of Music Therapy, Radford University</li>
+		</ul>
+		<h3>Certification &amp; Licensure</h3>
+		<ul>
+			<!-- Wording per CBMT (cbmt.org) -->
+			<li>
+				<strong>MT-BC</strong> — Music Therapist-Board Certified, Certification Board for Music Therapists
+				(CBMT)
+			</li>
+			<!-- Wording per the Illinois Music Therapy Licensing and Practice Act, 225 ILCS 56 -->
+			<li>
+				<strong>LPMT</strong> — Licensed Professional Music Therapist, Illinois Department of Financial
+				and Professional Regulation (IDFPR)
+			</li>
+		</ul>
+		<h3>Professional Memberships</h3>
+		<ul>
+			<li>American Music Therapy Association (AMTA)</li>
+		</ul>
 	</div>
 </Section>
 
@@ -108,11 +109,10 @@
 </Section>
 
 <style>
-	.bio {
+	.approach,
+	.bio,
+	.education {
 		max-width: 46rem;
-	}
-	.top {
-		align-items: start;
 	}
 	h3 {
 		font-size: 1.05rem;
