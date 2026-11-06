@@ -100,7 +100,7 @@
 		<h2>Ready to Get Started?</h2>
 		<!-- TODO: CTA copy -->
 		<p>Reach out for a free phone consultation to talk about goals and next steps.</p>
-		<a class="button" href={resolve('/contact')}>Get in touch</a>
+		<a class="button" href={resolve('/contact')}>Contact Palladia</a>
 	</div>
 </Section>
 
