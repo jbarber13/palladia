@@ -13,7 +13,7 @@
 
 <!-- TODO: contact intro copy -->
 <Hero
-	title="Contact"
+	title="Contact Us"
 	subtitle="We are here to answer your questions and help you explore how music therapy can support your goals. Connect with us by phone, email, or the contact form below to get started."
 	image={null}
 />
