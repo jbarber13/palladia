@@ -103,7 +103,7 @@
 <Section>
 	<div class="cta">
 		<div class="cta-logo"><Logo size={72} alt="" /></div>
-		<h2>Let’s Talk</h2>
+		<h2>Let’s Talk!</h2>
 		<a class="button" href={resolve('/contact')}>Contact {site.shortName}</a>
 	</div>
 </Section>
