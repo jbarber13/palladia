@@ -13,7 +13,7 @@
 		.credentials}, the music therapist behind {site.name}."
 />
 
-<Hero title="About {site.shortName}" subtitle={site.tagline} image={null} />
+<Hero title="About {site.shortName}" image={null} />
 
 <Section>
 	<!-- TODO: add a headshot beside the bio (see README → Images) -->
