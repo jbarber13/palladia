@@ -43,7 +43,7 @@
 	centered
 >
 	<!-- TODO: swap the logo for a hero photo once available (and drop imageRatio/imageFit) -->
-	<a class="button" href={resolve('/contact')}>Schedule a Consultation</a>
+	<a class="button" href={resolve('/contact')}>Request a Consultation</a>
 	<a class="button secondary" href={resolve('/services')}>Explore Services</a>
 </Hero>
 
