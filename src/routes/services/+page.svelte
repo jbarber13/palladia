@@ -26,7 +26,14 @@
 			<p><strong>{service.summary}</strong></p>
 			<ul>
 				{#each service.details as detail (detail)}
-					<li>{detail}</li>
+					{@const split = detail.indexOf(': ')}
+					<li>
+						{#if split === -1}
+							{detail}
+						{:else}
+							<strong>{detail.slice(0, split + 1)}</strong>{detail.slice(split + 1)}
+						{/if}
+					</li>
 				{/each}
 			</ul>
 		</div>
