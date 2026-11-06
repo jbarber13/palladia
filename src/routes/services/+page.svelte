@@ -35,40 +35,16 @@
 
 <Section>
 	<h2>Rates &amp; Scheduling</h2>
-	<dl class="facts">
-		<dt>Session length</dt>
-		<dd>Based on each client’s needs; most sessions run 30–45 minutes.</dd>
-		<dt>Rates</dt>
-		<dd>
-			Please <a href={resolve('/contact')}>get in touch</a> for pricing.
-		</dd>
-		<!-- TODO: payment methods / insurance, free consultation, cancellation policy -->
-	</dl>
+	<p>
+		Please contact us for custom quotes and scheduling options, as rates vary depending on your
+		selected services.
+	</p>
+	<!-- TODO: payment methods / insurance, free consultation, cancellation policy -->
 	<p>Serving: {site.serviceArea.join(', ')}.</p>
 	<a class="button" href={resolve('/contact')}>Request a consultation</a>
 </Section>
 
 <style>
-	.facts {
-		display: grid;
-		grid-template-columns: max-content 1fr;
-		gap: var(--space-1) var(--space-3);
-		margin: 0 0 var(--space-3);
-	}
-	.facts dt {
-		font-weight: 700;
-	}
-	.facts dd {
-		margin: 0;
-	}
-	@media (max-width: 30rem) {
-		.facts {
-			grid-template-columns: 1fr;
-		}
-		.facts dd {
-			margin-bottom: var(--space-1);
-		}
-	}
 	.service {
 		max-width: 46rem;
 	}
