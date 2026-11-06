@@ -81,16 +81,15 @@ export const services: Service[] = [
 	{
 		id: 'group-sessions',
 		title: 'Group Sessions',
-		summary:
-			'Engaging group music therapy for schools, care facilities, and community organizations.', // TODO
+		summary: 'Interactive and customized music therapy programs for group settings of all kinds.', // TODO
 		homeDescription:
 			'Interactive and customized music therapy programs for group settings of all kinds.',
 		details: [
 			// TODO: replace with real details
-			'Programs designed around the needs of each group',
-			'Skilled nursing, memory care, schools, and day programs',
-			'Recurring weekly sessions or one-time events',
-			'Documentation available for facility records'
+			'Assessment & Program Design: An initial intake helps shape group-centered goals and session plans, with clinical progress documented after every session.',
+			'Updates & Facility Communication: Regular updates and documentation are provided to help facilities, schools, and care teams track participant engagement and program outcomes.',
+			'All Ages & Needs: We are able to provide support to clients across the lifespan, from young children to older adults, with varying levels of abilities and needs.',
+			'Mobile Service: Sessions occur on-site at your facility or organization, with all instruments and materials provided by Palladia Music Therapy.'
 		]
 	}
 ];
