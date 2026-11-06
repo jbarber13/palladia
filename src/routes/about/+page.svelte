@@ -67,13 +67,12 @@
 			<h2>Our Approach</h2>
 			<!-- TODO: client to review the draft philosophy / values copy -->
 			<p>
-				Music therapy at {site.shortName} is client-centered: it starts with who you are, what matters
-				to you, and the music you connect with. Goals are clear and measurable, progress is reviewed regularly,
-				and care is coordinated with families, caregivers, schools, and healthcare teams when that helps.
-			</p>
-			<p>
-				Every session is built on respect, collaboration, and the belief that music can reach people
-				in ways words sometimes can’t.
+				At Palladia Music Therapy, our approach is rooted in a person-centered, strength-based, and
+				humanistic philosophy. We view every client as a whole person with unique strengths and
+				inherent potential, prioritizing empathy, respect, and deep connection above all else.
+				Because no two journeys are the same, we adapt to what serves you best in the moment. For a
+				more in-depth conversation about how we can support your specific needs, please feel free to
+				reach out to us.
 			</p>
 		</div>
 	</div>
