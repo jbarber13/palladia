@@ -38,16 +38,24 @@
 			<p class="role">{site.owner.title}</p>
 			<!-- TODO: client to review and personalize the draft bio -->
 			<p>
-				{site.owner.name} is a board-certified and Illinois-licensed music therapist who founded
-				{site.name} to bring individual and group music therapy to people across Lake County, IL. She
-				holds a Bachelor of Music Therapy from Radford University and uses music experiences — singing,
-				playing instruments, songwriting, improvisation, and movement — to support each client’s goals.
+				Gwen is a nationally board-certified and Illinois state-licensed music therapist based in
+				Lake County, IL. She is the owner of Palladia Music Therapy LLC. She holds a Bachelor of
+				Music Therapy from Radford University and has a background in music education from James
+				Madison University. Originally from Virginia, Gwen moved to Lake County, Illinois with her
+				husband and dogs in 2021 and loves this area! She is proud to bring more music therapy and
+				mental health awareness to the community she now calls home.
 			</p>
 			<p>
-				Each client begins with an assessment of their strengths and needs, followed by an
-				individualized plan. Sessions are flexible and adapt as goals change. Families and care
-				teams are kept informed along the way, and no musical background is required.
+				Gwen has had the joy of working as a music therapist in many settings with a variety of
+				populations including children and pre-teens in schools, older adults in nursing facilities,
+				teens and adults in inpatient psychiatric settings, and with children and infants in
+				children’s hospital settings. Across all settings, Gwen’s work centers on enhancing daily
+				quality of life and empowering clients to reach their fullest potential. Her clinical
+				practice focuses on building confidence, developing healthy coping skills, increasing
+				positive communication and social connection, and encouraging positive self-expression
+				through music.
 			</p>
+			<p>Gwen’s Favorite Things: Dogs, daily NYT games, and ballroom dancing with her husband.</p>
 		</div>
 	</div>
 </Section>
