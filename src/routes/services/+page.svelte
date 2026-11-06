@@ -23,7 +23,7 @@
 		<!-- TODO: add a photo for each service (see README → Images) -->
 		<div class="service" id={service.id}>
 			<h2>{service.title}</h2>
-			<p>{service.summary}</p>
+			<p><strong>{service.summary}</strong></p>
 			<ul>
 				{#each service.details as detail (detail)}
 					<li>{detail}</li>
