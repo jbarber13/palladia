@@ -27,7 +27,7 @@
 				<dd><a href="tel:{site.contact.phone.replace(/[^\d+]/g, '')}">{site.contact.phone}</a></dd>
 				<dt>Email</dt>
 				<dd><a href="mailto:{site.contact.email}">{site.contact.email}</a></dd>
-				<dt>Service area</dt>
+				<dt>Service Area</dt>
 				<dd>{site.serviceArea.join(', ')}</dd>
 				<!-- TODO: hours, if desired -->
 			</dl>
