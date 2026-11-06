@@ -99,7 +99,7 @@
 		<div class="cta-logo"><Logo size={88} alt="" /></div>
 		<h2>Ready to Get Started?</h2>
 		<!-- TODO: CTA copy -->
-		<p>Reach out for a free phone consultation to talk about goals and next steps.</p>
+		<p>We'd love to learn more about your goals and needs!</p>
 		<a class="button" href={resolve('/contact')}>Contact Palladia</a>
 	</div>
 </Section>
