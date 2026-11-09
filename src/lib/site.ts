@@ -65,20 +65,6 @@ export type Service = {
 /** Services shown on the Home and Services pages. */
 export const services: Service[] = [
 	{
-		id: 'individual-sessions',
-		title: 'Individual Sessions',
-		summary: 'Private, one-on-one music therapy providing focused, individualized support.', // TODO
-		homeDescription: 'Private, one-on-one music therapy providing focused, individualized support.',
-		details: [
-			// TODO: replace with real details
-			'Assessment & Clinical Planning: An initial assessment and intake forms help shape personalized goals and customized session plans and progress is documented every session.',
-			'Updates & Communication: Regular updates about progress can be provided to keep families and care teams fully informed.',
-			'All Ages & Needs: We are able to provide support to clients across the lifespan, from young children to older adults, with varying levels of abilities and needs.',
-			'Flexible Contracting: Services are available through direct private contracts for individuals and families, or as a service provided through schools, care facilities, and organizations.',
-			'Mobile Service: Sessions occur in-home or on-site (within a school/facility setting) with all instruments and materials provided by Palladia Music Therapy.'
-		]
-	},
-	{
 		id: 'group-sessions',
 		title: 'Group Sessions',
 		summary: 'Interactive and customized music therapy programs for group settings of all kinds.', // TODO
@@ -90,6 +76,20 @@ export const services: Service[] = [
 			'Updates & Facility Communication: Regular updates and documentation are provided to help facilities, schools, and care teams track participant engagement and program outcomes.',
 			'All Ages & Needs: We are able to provide support to clients across the lifespan, from young children to older adults, with varying levels of abilities and needs.',
 			'Mobile Service: Sessions occur on-site at your facility or organization, with all instruments and materials provided by Palladia Music Therapy.'
+		]
+	},
+	{
+		id: 'individual-sessions',
+		title: 'Individual Sessions',
+		summary: 'Private, one-on-one music therapy providing focused, individualized support.', // TODO
+		homeDescription: 'Private, one-on-one music therapy providing focused, individualized support.',
+		details: [
+			// TODO: replace with real details
+			'Assessment & Clinical Planning: An initial assessment and intake forms help shape personalized goals and customized session plans and progress is documented every session.',
+			'Updates & Communication: Regular updates about progress can be provided to keep families and care teams fully informed.',
+			'All Ages & Needs: We are able to provide support to clients across the lifespan, from young children to older adults, with varying levels of abilities and needs.',
+			'Flexible Contracting: Services are available through direct private contracts for individuals and families, or as a service provided through schools, care facilities, and organizations.',
+			'Mobile Service: Sessions occur in-home or on-site (within a school/facility setting) with all instruments and materials provided by Palladia Music Therapy.'
 		]
 	}
 ];
