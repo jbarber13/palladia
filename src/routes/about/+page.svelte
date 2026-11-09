@@ -146,14 +146,7 @@
 	}
 	@media (min-width: 48rem) {
 		.credentials {
-			grid-template-columns: minmax(0, 2.6fr) minmax(0, 1fr);
-			font-size: clamp(0.5rem, 1.1vw, 0.82rem);
-		}
-		.credentials ul {
-			padding-left: 1.2em;
-		}
-		.credentials li {
-			white-space: nowrap;
+			grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
 		}
 	}
 	.role {
