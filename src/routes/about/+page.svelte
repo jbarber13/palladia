@@ -94,15 +94,21 @@
 			<h2>The Name &amp; the Owl</h2>
 			<!-- TODO: client to confirm or replace the draft story of the name and the owl -->
 			<p>
-				The name Palladia draws on Pallas Athena, the Greek goddess of wisdom, whose constant
-				companion was the owl. In Greek myth and across many cultures since, the owl has stood for
-				wisdom, guidance, and the ability to see clearly where others cannot.
+				Our choice of the owl started with its link to wisdom and its musical call. When researching
+				more into the traditional folklore of the owl, we found that many cultures associate the owl
+				with qualities that resonate also with therapeutic work such as empathy, deep listening,
+				introspection, and navigating through darkness.
 			</p>
 			<p>
-				Those qualities are at the heart of music therapy, which begins with attentive listening —
-				to the person and to the music they bring. In the logo, a musical staff wraps around the
-				owl, a reminder that music is the path through which the work happens: a steady, supportive
-				way to express, connect, and grow.
+				The Owl of Pallas is famously known as the companion and symbol of Athena, the Greek goddess
+				of wisdom. This history inspired the name, Palladia, chosen for its musical sound, as well
+				as our color palette of blues and greens. Wrapped around the owl in our logo, the musical
+				lines represent music as a steady foundation that supports and uplifts you on your journey.
+			</p>
+			<p>
+				Just as we chose our name and symbol with deep care, we approach every client with that same
+				thoughtful intention, viewing you as a whole person and prioritizing genuine connection
+				every step of the way.
 			</p>
 		</div>
 	</div>
