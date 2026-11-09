@@ -91,7 +91,7 @@
 	<div class="grid-2 name-story">
 		<div class="story-logo"><Logo size={280} /></div>
 		<div>
-			<h2>The Name &amp; the Owl</h2>
+			<h2>The Name &amp; The Owl</h2>
 			<!-- TODO: client to confirm or replace the draft story of the name and the owl -->
 			<p>
 				Our choice of the owl started with its link to wisdom and its musical call. When researching
