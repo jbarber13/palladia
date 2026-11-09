@@ -63,27 +63,33 @@
 <Section>
 	<div class="education">
 		<h2>Education &amp; Credentials</h2>
-		<h3>Education</h3>
-		<ul>
-			<li>Bachelor of Music Therapy, Radford University</li>
-		</ul>
-		<h3>Certification &amp; Licensure</h3>
-		<ul>
-			<!-- Wording per CBMT (cbmt.org) -->
-			<li>
-				<strong>MT-BC</strong> — Music Therapist-Board Certified, Certification Board for Music Therapists
-				(CBMT)
-			</li>
-			<!-- Wording per the Illinois Music Therapy Licensing and Practice Act, 225 ILCS 56 -->
-			<li>
-				<strong>LPMT</strong> — Licensed Professional Music Therapist, Illinois Department of Financial
-				and Professional Regulation (IDFPR)
-			</li>
-		</ul>
-		<h3>Professional Memberships</h3>
-		<ul>
-			<li>American Music Therapy Association (AMTA)</li>
-		</ul>
+		<div class="grid-2 credentials">
+			<div>
+				<h3>Certification &amp; Licensure</h3>
+				<ul>
+					<!-- Wording per CBMT (cbmt.org) -->
+					<li>
+						<strong>MT-BC</strong> — Music Therapist-Board Certified, Certification Board for Music Therapists
+						(CBMT)
+					</li>
+					<!-- Wording per the Illinois Music Therapy Licensing and Practice Act, 225 ILCS 56 -->
+					<li>
+						<strong>LPMT</strong> — Licensed Professional Music Therapist, Illinois Department of Financial
+						and Professional Regulation (IDFPR)
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Education</h3>
+				<ul>
+					<li>Bachelor of Music Therapy, Radford University</li>
+				</ul>
+				<h3>Professional Memberships</h3>
+				<ul>
+					<li>American Music Therapy Association (AMTA)</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </Section>
 
@@ -131,6 +137,13 @@
 	h3 {
 		font-size: 1.05rem;
 		margin: var(--space-3) 0 var(--space-1);
+	}
+	.credentials {
+		align-items: start;
+		gap: var(--space-2) var(--space-4);
+	}
+	.credentials h3:first-child {
+		margin-top: 0;
 	}
 	.role {
 		color: var(--color-text-muted);
