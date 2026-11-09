@@ -130,8 +130,7 @@
 
 <style>
 	.approach,
-	.bio,
-	.education {
+	.bio {
 		max-width: 46rem;
 	}
 	h3 {
@@ -144,6 +143,18 @@
 	}
 	.credentials h3:first-child {
 		margin-top: 0;
+	}
+	@media (min-width: 48rem) {
+		.credentials {
+			grid-template-columns: minmax(0, 2.6fr) minmax(0, 1fr);
+			font-size: clamp(0.5rem, 1.1vw, 0.82rem);
+		}
+		.credentials ul {
+			padding-left: 1.2em;
+		}
+		.credentials li {
+			white-space: nowrap;
+		}
 	}
 	.role {
 		color: var(--color-text-muted);
