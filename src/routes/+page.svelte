@@ -126,17 +126,14 @@
 	<div class="services">
 		{#each services as service (service.title)}
 			<div class="card">
-				<h3>{service.title}</h3>
-				<a href="{resolve('/services')}#{service.id}">Learn more &rarr;</a>
+				<h3><a href="{resolve('/services')}#{service.id}">{service.title}</a></h3>
 			</div>
 		{/each}
 		<div class="card">
-			<h3>Populations &amp; Settings</h3>
-			<a href={resolve('/services') + '#who-we-serve'}>Learn more &rarr;</a>
+			<h3><a href={resolve('/services') + '#who-we-serve'}>Populations &amp; Settings</a></h3>
 		</div>
 		<div class="card">
-			<h3>Meet Gwen</h3>
-			<a href={resolve('/about') + '#meet-gwen'}>Learn more &rarr;</a>
+			<h3><a href={resolve('/about') + '#meet-gwen'}>Meet Gwen</a></h3>
 		</div>
 	</div>
 </Section>
@@ -216,6 +213,17 @@
 		display: grid;
 		gap: var(--space-3);
 		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+	}
+	.services h3 {
+		margin-bottom: 0;
+	}
+	.services h3 a {
+		color: var(--color-heading);
+		text-decoration: none;
+	}
+	.services h3 a:hover {
+		color: var(--color-primary);
+		text-decoration: underline;
 	}
 	.cta-logo {
 		display: flex;
