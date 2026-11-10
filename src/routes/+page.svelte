@@ -84,22 +84,40 @@
 <Section tone="muted">
 	<h2 class="benefits-heading">Benefits</h2>
 	<ul class="benefits">
-		<li class="card">Overall Health &amp; Well-Being</li>
-		<li class="card">Memory Recall</li>
-		<li class="card">Mental Acuity</li>
-		<li class="card">Emotional Regulation</li>
-		<li class="card">Mood Support</li>
-		<li class="card">Creative Self-Expression</li>
-		<li class="card">Empowerment</li>
-		<li class="card">Fine &amp; Gross Motor Function</li>
-		<li class="card">Speech Recovery</li>
-		<li class="card">Vocal Strength</li>
-		<li class="card">Social Connection</li>
-		<li class="card">Reduced Isolation</li>
-		<li class="card">Stress Relief</li>
-		<li class="card">Anxiety Reduction</li>
-		<li class="card">Have Fun!</li>
-		<li class="card">And More!</li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">💚</span><span>Overall Health &amp; Well-Being</span>
+		</li>
+		<li class="card"><span class="emoji" aria-hidden="true">🧠</span><span>Memory Recall</span></li>
+		<li class="card"><span class="emoji" aria-hidden="true">💡</span><span>Mental Acuity</span></li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">🌊</span><span>Emotional Regulation</span>
+		</li>
+		<li class="card"><span class="emoji" aria-hidden="true">😊</span><span>Mood Support</span></li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">🎨</span><span>Creative Self-Expression</span>
+		</li>
+		<li class="card"><span class="emoji" aria-hidden="true">💪</span><span>Empowerment</span></li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">🖐️</span><span>Fine &amp; Gross Motor Function</span>
+		</li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">🗣️</span><span>Speech Recovery</span>
+		</li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">🎤</span><span>Vocal Strength</span>
+		</li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">🤝</span><span>Social Connection</span>
+		</li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">🌈</span><span>Reduced Isolation</span>
+		</li>
+		<li class="card"><span class="emoji" aria-hidden="true">🧘</span><span>Stress Relief</span></li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">🍃</span><span>Anxiety Reduction</span>
+		</li>
+		<li class="card"><span class="emoji" aria-hidden="true">🎉</span><span>Have Fun!</span></li>
+		<li class="card"><span class="emoji" aria-hidden="true">✨</span><span>And More!</span></li>
 	</ul>
 </Section>
 
@@ -148,10 +166,12 @@
 	}
 	.benefits li {
 		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		min-height: 3.5rem;
+		min-height: 5rem;
 		padding: 0.6rem 0.75rem;
 		border-top: 0.25rem solid var(--color-accent);
 		font-family: var(--font-heading);
@@ -161,6 +181,10 @@
 		color: var(--color-heading);
 		overflow-wrap: anywhere;
 		hyphens: auto;
+	}
+	.benefits .emoji {
+		font-size: 1.5rem;
+		line-height: 1;
 	}
 	@media (min-width: 40rem) {
 		.benefits-heading {
@@ -172,9 +196,12 @@
 			gap: var(--space-2);
 		}
 		.benefits li {
-			min-height: 5rem;
+			min-height: 6.5rem;
 			padding: var(--space-2) var(--space-2);
 			font-size: 1.15rem;
+		}
+		.benefits .emoji {
+			font-size: 1.75rem;
 		}
 	}
 	@media (min-width: 64rem) {
