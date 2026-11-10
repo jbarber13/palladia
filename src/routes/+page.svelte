@@ -135,32 +135,44 @@
 
 <style>
 	.benefits-heading {
-		margin-top: var(--space-4);
-		margin-bottom: var(--space-4);
+		margin-top: var(--space-3);
+		margin-bottom: var(--space-3);
 	}
 	.benefits {
 		list-style: none;
-		margin: 0 0 var(--space-4);
+		margin: 0 0 var(--space-3);
 		padding: 0;
 		display: grid;
-		gap: var(--space-3);
-		grid-template-columns: 1fr;
+		gap: var(--space-2);
+		grid-template-columns: repeat(2, 1fr);
 	}
 	.benefits li {
 		display: flex;
 		align-items: center;
-		min-height: 9rem;
-		padding: var(--space-4) var(--space-3);
+		min-height: 4.5rem;
+		padding: var(--space-2);
 		border-top: 0.375rem solid var(--color-accent);
 		font-family: var(--font-heading);
-		font-size: 1.3rem;
+		font-size: 1.05rem;
 		font-weight: 600;
 		line-height: 1.3;
 		color: var(--color-heading);
+		overflow-wrap: anywhere;
+		hyphens: auto;
 	}
 	@media (min-width: 40rem) {
+		.benefits-heading {
+			margin-top: var(--space-4);
+			margin-bottom: var(--space-4);
+		}
 		.benefits {
-			grid-template-columns: repeat(2, 1fr);
+			margin-bottom: var(--space-4);
+			gap: var(--space-3);
+		}
+		.benefits li {
+			min-height: 9rem;
+			padding: var(--space-4) var(--space-3);
+			font-size: 1.3rem;
 		}
 	}
 	@media (min-width: 64rem) {
