@@ -82,7 +82,7 @@
 </Section>
 
 <Section tone="muted">
-	<h2 class="benefits-heading">Benefits</h2>
+	<h2 class="benefits-heading">Benefits of Music Therapy</h2>
 	<ul class="benefits">
 		<li class="card">
 			<span class="emoji" aria-hidden="true">💚</span><span>Overall Health &amp; Well-Being</span>
