@@ -143,17 +143,19 @@
 		margin: 0 0 var(--space-3);
 		padding: 0;
 		display: grid;
-		gap: var(--space-2);
+		gap: 0.75rem;
 		grid-template-columns: repeat(2, 1fr);
 	}
 	.benefits li {
 		display: flex;
 		align-items: center;
-		min-height: 4.5rem;
-		padding: var(--space-2);
-		border-top: 0.375rem solid var(--color-accent);
+		justify-content: center;
+		text-align: center;
+		min-height: 3.5rem;
+		padding: 0.6rem 0.75rem;
+		border-top: 0.25rem solid var(--color-accent);
 		font-family: var(--font-heading);
-		font-size: 1.05rem;
+		font-size: 1rem;
 		font-weight: 600;
 		line-height: 1.3;
 		color: var(--color-heading);
@@ -162,17 +164,17 @@
 	}
 	@media (min-width: 40rem) {
 		.benefits-heading {
-			margin-top: var(--space-4);
-			margin-bottom: var(--space-4);
+			margin-top: var(--space-3);
+			margin-bottom: var(--space-3);
 		}
 		.benefits {
-			margin-bottom: var(--space-4);
-			gap: var(--space-3);
+			margin-bottom: var(--space-3);
+			gap: var(--space-2);
 		}
 		.benefits li {
-			min-height: 9rem;
-			padding: var(--space-4) var(--space-3);
-			font-size: 1.3rem;
+			min-height: 5rem;
+			padding: var(--space-2) var(--space-2);
+			font-size: 1.15rem;
 		}
 	}
 	@media (min-width: 64rem) {
@@ -180,7 +182,7 @@
 			grid-template-columns: repeat(4, 1fr);
 		}
 		.benefits li {
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 		}
 	}
 	.services {
