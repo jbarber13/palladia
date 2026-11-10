@@ -82,17 +82,17 @@
 </Section>
 
 <Section tone="muted">
-	<h2>Benefits</h2>
-	<ul>
-		<li>Overall Health &amp; Well-Being</li>
-		<li>Memory Recall &amp; Mental Acuity</li>
-		<li>Emotional Regulation &amp; Mood Support</li>
-		<li>Creative Self-Expression &amp; Empowerment</li>
-		<li>Fine &amp; Gross Motor Function</li>
-		<li>Speech Recovery &amp; Vocal Strength</li>
-		<li>Social Connection &amp; Reduced Isolation</li>
-		<li>Stress Relief &amp; Anxiety Reduction</li>
-		<li>And More!</li>
+	<h2 class="benefits-heading">Benefits</h2>
+	<ul class="benefits">
+		<li class="card">Overall Health &amp; Well-Being</li>
+		<li class="card">Memory Recall &amp; Mental Acuity</li>
+		<li class="card">Emotional Regulation &amp; Mood Support</li>
+		<li class="card">Creative Self-Expression &amp; Empowerment</li>
+		<li class="card">Fine &amp; Gross Motor Function</li>
+		<li class="card">Speech Recovery &amp; Vocal Strength</li>
+		<li class="card">Social Connection &amp; Reduced Isolation</li>
+		<li class="card">Stress Relief &amp; Anxiety Reduction</li>
+		<li class="card">And More!</li>
 	</ul>
 </Section>
 
@@ -127,6 +127,40 @@
 </Section>
 
 <style>
+	.benefits-heading {
+		margin-top: var(--space-4);
+		margin-bottom: var(--space-4);
+	}
+	.benefits {
+		list-style: none;
+		margin: 0 0 var(--space-4);
+		padding: 0;
+		display: grid;
+		gap: var(--space-3);
+		grid-template-columns: 1fr;
+	}
+	.benefits li {
+		display: flex;
+		align-items: center;
+		min-height: 9rem;
+		padding: var(--space-4) var(--space-3);
+		border-top: 0.375rem solid var(--color-accent);
+		font-family: var(--font-heading);
+		font-size: 1.3rem;
+		font-weight: 600;
+		line-height: 1.3;
+		color: var(--color-heading);
+	}
+	@media (min-width: 40rem) {
+		.benefits {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (min-width: 64rem) {
+		.benefits {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
 	.services {
 		display: grid;
 		gap: var(--space-3);
