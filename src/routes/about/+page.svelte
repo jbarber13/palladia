@@ -23,7 +23,7 @@
 
 <Section tone="muted">
 	<!-- TODO: add a headshot beside the bio (see README → Images) -->
-	<div class="bio">
+	<div class="bio" id="meet-gwen">
 		<div>
 			<h2>{site.owner.name}, {site.owner.credentials}</h2>
 			<p class="role">{site.owner.title}</p>
