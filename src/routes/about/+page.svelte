@@ -13,22 +13,12 @@
 		.credentials}, the music therapist behind {site.name}."
 />
 
-<Hero title="About {site.shortName}" image={null} />
-
-<Section>
-	<div class="approach">
-		<h2>Our Approach</h2>
-		<!-- TODO: client to review the draft philosophy / values copy -->
-		<p>
-			At Palladia Music Therapy, our approach is rooted in a person-centered, strength-based, and
-			humanistic philosophy. We view every client as a whole person with unique strengths and
-			inherent potential, prioritizing empathy, respect, and deep connection above all else. Because
-			no two journeys are the same, we adapt to what serves you best in the moment. For a more
-			in-depth conversation about how we can support your specific needs, please feel free to reach
-			out to us.
-		</p>
-	</div>
-</Section>
+<!-- TODO: client to review the draft philosophy / values copy -->
+<Hero
+	title="About {site.shortName}"
+	subtitle="At Palladia Music Therapy, our approach is rooted in a person-centered, strength-based, and humanistic philosophy. We view every client as a whole person with unique strengths and inherent potential, prioritizing empathy, respect, and deep connection above all else. Because no two journeys are the same, we adapt to what serves you best in the moment. For a more in-depth conversation about how we can support your specific needs, please feel free to reach out to us."
+	image={null}
+/>
 
 <Section tone="muted">
 	<!-- TODO: add a headshot beside the bio (see README → Images) -->
@@ -129,7 +119,6 @@
 </Section>
 
 <style>
-	.approach,
 	.bio {
 		max-width: 46rem;
 	}
