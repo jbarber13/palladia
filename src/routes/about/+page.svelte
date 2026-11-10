@@ -21,7 +21,7 @@
 	wide
 />
 
-<Section tone="muted">
+<Section>
 	<!-- TODO: add a headshot beside the bio (see README → Images) -->
 	<div class="bio" id="meet-gwen">
 		<div>
@@ -51,7 +51,7 @@
 	</div>
 </Section>
 
-<Section>
+<Section tone="muted">
 	<div class="education">
 		<h2>Education &amp; Credentials</h2>
 		<div class="grid-2 credentials">
@@ -84,7 +84,7 @@
 	</div>
 </Section>
 
-<Section tone="tint">
+<Section>
 	<div class="grid-2 name-story">
 		<div class="story-logo"><Logo size={280} /></div>
 		<div>
@@ -111,7 +111,7 @@
 	</div>
 </Section>
 
-<Section>
+<Section tone="tint">
 	<div class="cta">
 		<div class="cta-logo"><Logo size={72} alt="" /></div>
 		<h2>Let’s Talk!</h2>

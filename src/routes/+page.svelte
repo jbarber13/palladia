@@ -81,7 +81,7 @@
 	</div>
 </Section>
 
-<Section tone="tint">
+<Section tone="muted">
 	<h2>Benefits</h2>
 	<ul>
 		<li>Overall Health &amp; Well-Being</li>
@@ -96,7 +96,7 @@
 	</ul>
 </Section>
 
-<Section tone="muted">
+<Section>
 	<h2>Quick Links</h2>
 	<div class="services">
 		{#each services as service (service.title)}
@@ -116,7 +116,7 @@
 	</div>
 </Section>
 
-<Section>
+<Section tone="tint">
 	<div class="cta">
 		<div class="cta-logo"><Logo size={88} alt="" /></div>
 		<h2>Ready to Get Started?</h2>

@@ -19,7 +19,7 @@
 	wide
 />
 
-<Section tone="muted">
+<Section>
 	<div id="who-we-serve">
 		<h2>Who Do We Serve?</h2>
 		<div class="grid-2 who">
@@ -59,7 +59,7 @@
 </Section>
 
 {#each services as service, i (service.title)}
-	<Section tone={i % 2 ? 'muted' : 'default'}>
+	<Section tone={i % 2 ? 'default' : 'muted'}>
 		<!-- TODO: add a photo for each service (see README → Images) -->
 		<div class="service" id={service.id}>
 			<h2>{service.title}</h2>
@@ -80,7 +80,7 @@
 	</Section>
 {/each}
 
-<Section>
+<Section tone="tint">
 	<h2>Rates &amp; Scheduling</h2>
 	<p>
 		Please contact us for custom quotes and scheduling options, as rates vary depending on your
