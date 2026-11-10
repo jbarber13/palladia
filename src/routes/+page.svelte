@@ -97,15 +97,22 @@
 </Section>
 
 <Section tone="muted">
-	<h2>Services</h2>
+	<h2>Quick Links</h2>
 	<div class="services">
 		{#each services as service (service.title)}
 			<div class="card">
 				<h3>{service.title}</h3>
-				<p>{service.homeDescription ?? service.summary}</p>
 				<a href="{resolve('/services')}#{service.id}">Learn more &rarr;</a>
 			</div>
 		{/each}
+		<div class="card">
+			<h3>Populations &amp; Settings</h3>
+			<a href={resolve('/services') + '#who-we-serve'}>Learn more &rarr;</a>
+		</div>
+		<div class="card">
+			<h3>Meet Gwen</h3>
+			<a href={resolve('/about') + '#meet-gwen'}>Learn more &rarr;</a>
+		</div>
 	</div>
 </Section>
 
