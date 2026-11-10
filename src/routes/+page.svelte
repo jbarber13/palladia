@@ -81,6 +81,21 @@
 	</div>
 </Section>
 
+<Section tone="tint">
+	<h2>Benefits</h2>
+	<ul>
+		<li>Overall Health &amp; Well-Being</li>
+		<li>Memory Recall &amp; Mental Acuity</li>
+		<li>Emotional Regulation &amp; Mood Support</li>
+		<li>Creative Self-Expression &amp; Empowerment</li>
+		<li>Fine &amp; Gross Motor Function</li>
+		<li>Speech Recovery &amp; Vocal Strength</li>
+		<li>Social Connection &amp; Reduced Isolation</li>
+		<li>Stress Relief &amp; Anxiety Reduction</li>
+		<li>And More!</li>
+	</ul>
+</Section>
+
 <Section tone="muted">
 	<h2>Services</h2>
 	<div class="services">
