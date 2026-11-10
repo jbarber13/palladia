@@ -19,6 +19,45 @@
 	wide
 />
 
+<Section tone="muted">
+	<div id="who-we-serve">
+		<h2>Who Do We Serve?</h2>
+		<div class="grid-2 who">
+			<div>
+				<h3>Populations</h3>
+				<p>We serve individuals of all ages and can provide support for areas of need such as:</p>
+				<ul>
+					<li>Alzheimer’s/Dementia</li>
+					<li>Traumatic Brain Injuries &amp; Other Neurological Conditions</li>
+					<li>Stroke Recovery</li>
+					<li>Intellectual/Developmental Disabilities</li>
+					<li>Behavioral Issues</li>
+					<li>Mental Health &amp; Emotional Well-Being</li>
+					<li>Mobility &amp; Physical Challenges</li>
+					<li>Speech &amp; Language Challenges</li>
+					<li>And More!</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Settings</h3>
+				<ul>
+					<li>
+						Senior Living Communities (memory care, independent living, skilled nursing, etc.)
+					</li>
+					<li>K-12 Schools</li>
+					<li>Day Programs</li>
+					<li>Community Centers</li>
+					<li>Mental Health Facilities</li>
+					<li>Daycare Facilities</li>
+					<li>Hospitals</li>
+					<li>In-Home</li>
+					<li>And More!</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</Section>
+
 {#each services as service, i (service.title)}
 	<Section tone={i % 2 ? 'muted' : 'default'}>
 		<!-- TODO: add a photo for each service (see README → Images) -->
@@ -55,5 +94,8 @@
 <style>
 	.service {
 		max-width: 46rem;
+	}
+	.who {
+		align-items: start;
 	}
 </style>
