@@ -13,6 +13,8 @@
 		imageFit?: 'cover' | 'contain';
 		/** Center the text block (headline, intro, buttons). */
 		centered?: boolean;
+		/** Let the intro text span the full page width instead of a narrow column. */
+		wide?: boolean;
 		children?: Snippet;
 	};
 
@@ -24,6 +26,7 @@
 		imageRatio,
 		imageFit,
 		centered = false,
+		wide = false,
 		children
 	}: Props = $props();
 
@@ -37,7 +40,7 @@
 			<h1>
 				{#each lines as line, i (i)}{line}{#if i < lines.length - 1}{' '}<br />{/if}{/each}
 			</h1>
-			{#if subtitle}<p class="subtitle">{subtitle}</p>{/if}
+			{#if subtitle}<p class="subtitle" class:wide>{subtitle}</p>{/if}
 			{#if children}<div class="actions">{@render children()}</div>{/if}
 		</div>
 		{#if image}
@@ -64,6 +67,9 @@
 		font-size: 1.2rem;
 		color: var(--color-text-muted);
 		max-width: 40rem;
+	}
+	.subtitle.wide {
+		max-width: none;
 	}
 	.actions {
 		display: flex;

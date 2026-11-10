@@ -18,6 +18,7 @@
 	title="About {site.shortName}"
 	subtitle="At Palladia Music Therapy, our approach is rooted in a person-centered, strength-based, and humanistic philosophy. We view every client as a whole person with unique strengths and inherent potential, prioritizing empathy, respect, and deep connection above all else. Because no two journeys are the same, we adapt to what serves you best in the moment. For a more in-depth conversation about how we can support your specific needs, please feel free to reach out to us."
 	image={null}
+	wide
 />
 
 <Section tone="muted">
