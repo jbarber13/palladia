@@ -85,13 +85,20 @@
 	<h2 class="benefits-heading">Benefits</h2>
 	<ul class="benefits">
 		<li class="card">Overall Health &amp; Well-Being</li>
-		<li class="card">Memory Recall &amp; Mental Acuity</li>
-		<li class="card">Emotional Regulation &amp; Mood Support</li>
-		<li class="card">Creative Self-Expression &amp; Empowerment</li>
+		<li class="card">Memory Recall</li>
+		<li class="card">Mental Acuity</li>
+		<li class="card">Emotional Regulation</li>
+		<li class="card">Mood Support</li>
+		<li class="card">Creative Self-Expression</li>
+		<li class="card">Empowerment</li>
 		<li class="card">Fine &amp; Gross Motor Function</li>
-		<li class="card">Speech Recovery &amp; Vocal Strength</li>
-		<li class="card">Social Connection &amp; Reduced Isolation</li>
-		<li class="card">Stress Relief &amp; Anxiety Reduction</li>
+		<li class="card">Speech Recovery</li>
+		<li class="card">Vocal Strength</li>
+		<li class="card">Social Connection</li>
+		<li class="card">Reduced Isolation</li>
+		<li class="card">Stress Relief</li>
+		<li class="card">Anxiety Reduction</li>
+		<li class="card">Have Fun!</li>
 		<li class="card">And More!</li>
 	</ul>
 </Section>
@@ -158,7 +165,10 @@
 	}
 	@media (min-width: 64rem) {
 		.benefits {
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(4, 1fr);
+		}
+		.benefits li {
+			font-size: 1.2rem;
 		}
 	}
 	.services {
