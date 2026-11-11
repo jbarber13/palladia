@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { asset, resolve } from '$app/paths';
 	import { site, services } from '#lib/site.ts';
 	import Seo from '#lib/components/Seo.svelte';
 	import Hero from '#lib/components/Hero.svelte';
 	import Section from '#lib/components/Section.svelte';
+	import Image from '#lib/components/Image.svelte';
 </script>
 
 <Seo
@@ -61,21 +62,32 @@
 {#each services as service, i (service.title)}
 	<Section tone={i % 2 ? 'default' : 'muted'}>
 		<!-- TODO: add a photo for each service (see README → Images) -->
-		<div class="service" id={service.id}>
+		{@const showImage = service.id === 'group-sessions'}
+		<div class="service" class:with-image={showImage} id={service.id}>
 			<h2>{service.title}</h2>
-			<p><strong>{service.summary}</strong></p>
-			<ul>
-				{#each service.details as detail (detail)}
-					{@const split = detail.indexOf(': ')}
-					<li>
-						{#if split === -1}
-							{detail}
-						{:else}
-							<strong>{detail.slice(0, split + 1)}</strong>{detail.slice(split + 1)}
-						{/if}
-					</li>
-				{/each}
-			</ul>
+			<div class:grid-2={showImage} class:top={showImage}>
+				<div>
+					<p><strong>{service.summary}</strong></p>
+					<ul>
+						{#each service.details as detail (detail)}
+							{@const split = detail.indexOf(': ')}
+							<li>
+								{#if split === -1}
+									{detail}
+								{:else}
+									<strong>{detail.slice(0, split + 1)}</strong>{detail.slice(split + 1)}
+								{/if}
+							</li>
+						{/each}
+					</ul>
+				</div>
+				{#if showImage}
+					<Image
+						src={asset('images/group-sessions.jpg')}
+						alt="A music therapist playing guitar while children sit on the floor clapping and smiling"
+					/>
+				{/if}
+			</div>
 		</div>
 	</Section>
 {/each}
@@ -94,6 +106,12 @@
 <style>
 	.service {
 		max-width: 46rem;
+	}
+	.service.with-image {
+		max-width: none;
+	}
+	.top {
+		align-items: start;
 	}
 	.who {
 		align-items: start;
