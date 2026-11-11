@@ -246,6 +246,7 @@
 	.services h3 {
 		margin-bottom: 0;
 		overflow-wrap: anywhere;
+		text-align: center;
 	}
 	.services h3 a {
 		color: var(--color-heading);
@@ -254,6 +255,10 @@
 	.services .card {
 		position: relative;
 		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 		padding: var(--space-2) var(--space-2);
 	}
 	/* Stretched link: the link's clickable area covers the whole card. */
