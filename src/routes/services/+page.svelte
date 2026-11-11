@@ -62,10 +62,11 @@
 {#each services as service, i (service.title)}
 	<Section tone={i % 2 ? 'default' : 'muted'}>
 		<!-- TODO: add a photo for each service (see README → Images) -->
-		{@const showImage = service.id === 'group-sessions'}
+		{@const showImage = service.id === 'group-sessions' || service.id === 'individual-sessions'}
+		{@const imageLeft = service.id === 'individual-sessions'}
 		<div class="service" class:with-image={showImage} id={service.id}>
 			<h2>{service.title}</h2>
-			<div class:grid-2={showImage} class:top={showImage}>
+			<div class:grid-2={showImage} class:top={showImage} class:image-left={imageLeft}>
 				<div>
 					<p><strong>{service.summary}</strong></p>
 					<ul>
@@ -81,10 +82,15 @@
 						{/each}
 					</ul>
 				</div>
-				{#if showImage}
+				{#if service.id === 'group-sessions'}
 					<Image
 						src={asset('images/group-sessions.jpg')}
 						alt="A music therapist playing guitar while children sit on the floor clapping and smiling"
+					/>
+				{:else if service.id === 'individual-sessions'}
+					<Image
+						src={asset('images/individual-sessions.jpg')}
+						alt="A music therapist playing guitar while a client holds a tablet beside them"
 					/>
 				{/if}
 			</div>
@@ -115,5 +121,10 @@
 	}
 	.who {
 		align-items: start;
+	}
+	@media (min-width: 48rem) {
+		.image-left > :global(img) {
+			order: -1;
+		}
 	}
 </style>
