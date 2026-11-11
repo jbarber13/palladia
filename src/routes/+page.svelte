@@ -142,6 +142,15 @@
 				>
 			</h3>
 		</div>
+		<div class="card">
+			<h3>
+				<a
+					href="https://app.sessionshealth.com/users/sign_in"
+					target="_blank"
+					rel="noopener noreferrer">Sessions Health Patient Portal</a
+				>
+			</h3>
+		</div>
 	</div>
 </Section>
 
