@@ -54,7 +54,7 @@
 			“Service providers” below).
 		</p>
 
-		<h2>Please Don’t Send Health Information Through This Website</h2>
+		<h2>Please Don’t Send Confidential Health Information Through This Website</h2>
 		<p>
 			The contact form and email are intended for general inquiries and scheduling. Please do not
 			include detailed medical, diagnostic, or other sensitive health information. We’re happy to
