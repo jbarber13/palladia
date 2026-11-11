@@ -135,6 +135,13 @@
 		<div class="card">
 			<h3><a href={resolve('/about') + '#meet-gwen'}>Meet Gwen</a></h3>
 		</div>
+		<div class="card">
+			<h3>
+				<a href="https://hsso.helcim.com/login/" target="_blank" rel="noopener noreferrer"
+					>Helcim Payment Portal</a
+				>
+			</h3>
+		</div>
 	</div>
 </Section>
 
