@@ -68,7 +68,7 @@
 			{#if !imageLeft}
 				<h2>{service.title}</h2>
 			{/if}
-			<div class:grid-2={showImage} class:top={showImage} class:image-left={imageLeft}>
+			<div class:grid-2={showImage} class:image-left={imageLeft}>
 				<div>
 					{#if imageLeft}
 						<h2>{service.title}</h2>
@@ -120,9 +120,6 @@
 	}
 	.service.with-image {
 		max-width: none;
-	}
-	.top {
-		align-items: start;
 	}
 	.who {
 		align-items: start;
