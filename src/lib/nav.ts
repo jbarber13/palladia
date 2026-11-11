@@ -3,5 +3,6 @@ export const nav = [
 	{ label: 'Home', href: '/' },
 	{ label: 'About', href: '/about' },
 	{ label: 'Services', href: '/services' },
+	{ label: 'FAQs', href: '/faqs' },
 	{ label: 'Contact', href: '/contact' }
 ] as const;
