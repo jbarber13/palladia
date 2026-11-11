@@ -150,9 +150,6 @@
 </Section>
 
 <style>
-	.prose {
-		max-width: 46rem;
-	}
 	.prose h2 {
 		margin-top: var(--space-4);
 		font-size: 1.4rem;
