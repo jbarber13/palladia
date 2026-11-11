@@ -65,9 +65,14 @@
 		{@const showImage = service.id === 'group-sessions' || service.id === 'individual-sessions'}
 		{@const imageLeft = service.id === 'individual-sessions'}
 		<div class="service" class:with-image={showImage} id={service.id}>
-			<h2>{service.title}</h2>
+			{#if !imageLeft}
+				<h2>{service.title}</h2>
+			{/if}
 			<div class:grid-2={showImage} class:top={showImage} class:image-left={imageLeft}>
 				<div>
+					{#if imageLeft}
+						<h2>{service.title}</h2>
+					{/if}
 					<p><strong>{service.summary}</strong></p>
 					<ul>
 						{#each service.details as detail (detail)}
