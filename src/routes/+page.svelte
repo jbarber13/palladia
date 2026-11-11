@@ -251,7 +251,7 @@
 	}
 	.services .card:hover,
 	.services .card:focus-within {
-		background: var(--color-tint);
+		background: var(--color-muted-bg);
 		border-color: var(--color-accent-soft);
 	}
 	@media (prefers-reduced-motion: no-preference) {
