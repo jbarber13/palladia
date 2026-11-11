@@ -221,9 +221,41 @@
 		color: var(--color-heading);
 		text-decoration: none;
 	}
-	.services h3 a:hover {
+	.services .card {
+		position: relative;
+		cursor: pointer;
+	}
+	/* Stretched link: the link's clickable area covers the whole card. */
+	.services h3 a::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+	}
+	.services h3 a:hover,
+	.services .card:hover h3 a {
 		color: var(--color-primary);
 		text-decoration: underline;
+	}
+	.services .card:hover,
+	.services .card:focus-within {
+		background: var(--color-tint);
+		border-color: var(--color-accent-soft);
+	}
+	@media (prefers-reduced-motion: no-preference) {
+		.services .card {
+			transition:
+				background-color 0.15s ease,
+				border-color 0.15s ease;
+		}
+	}
+	/* Show the keyboard focus ring around the whole card instead of just the title text. */
+	.services h3 a:focus-visible {
+		outline: none;
+	}
+	.services .card:has(a:focus-visible) {
+		outline: 3px solid var(--color-accent);
+		outline-offset: 2px;
 	}
 	.cta-logo {
 		display: flex;
