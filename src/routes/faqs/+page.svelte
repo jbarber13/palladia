@@ -35,6 +35,14 @@
 			equipment for all sessions.
 		</p>
 
+		<h2>What are common music therapy interventions used in your sessions?</h2>
+		<p>
+			Depending on the age and abilities of our clients, we adapt many different interventions to
+			fit our clients needs and help them achieve their therapeutic goals. Common interventions
+			include but are not limited to variations of active music making, songwriting, music
+			listening, music games, relaxation experiences, and movement.
+		</p>
+
 		<h2>Do you take insurance?</h2>
 		<p>
 			At this time, we are a private-pay practice and do not bill health insurance directly.
