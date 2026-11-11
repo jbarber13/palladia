@@ -13,7 +13,7 @@
 <Hero title="FAQs" image={null} />
 
 <Section>
-	<div class="faqs">
+	<div>
 		<h2>How often are sessions scheduled?</h2>
 		<p>
 			Everyone is different, but on average, we recommend scheduling sessions weekly to get the most
@@ -62,9 +62,6 @@
 </Section>
 
 <style>
-	.faqs {
-		max-width: 46rem;
-	}
 	h2 {
 		font-size: 1.35rem;
 		margin-top: var(--space-4);
