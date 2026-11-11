@@ -212,10 +212,21 @@
 	.services {
 		display: grid;
 		gap: var(--space-3);
-		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+		grid-template-columns: 1fr;
+	}
+	@media (min-width: 40rem) {
+		.services {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (min-width: 64rem) {
+		.services {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 	.services h3 {
 		margin-bottom: 0;
+		overflow-wrap: anywhere;
 	}
 	.services h3 a {
 		color: var(--color-heading);
@@ -224,6 +235,7 @@
 	.services .card {
 		position: relative;
 		cursor: pointer;
+		padding: var(--space-2) var(--space-2);
 	}
 	/* Stretched link: the link's clickable area covers the whole card. */
 	.services h3 a::after {
