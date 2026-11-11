@@ -36,7 +36,7 @@
 			have.
 		</p>
 
-		<h2>Information we collect</h2>
+		<h2>Information We Collect</h2>
 		<p><strong>Information you give us.</strong> When you use our contact form, we collect:</p>
 		<ul>
 			<li>Your name and email address</li>
@@ -54,7 +54,7 @@
 			“Service providers” below).
 		</p>
 
-		<h2>Please don’t send health information through this website</h2>
+		<h2>Please Don’t Send Health Information Through This Website</h2>
 		<p>
 			The contact form and email are intended for general inquiries and scheduling. Please do not
 			include detailed medical, diagnostic, or other sensitive health information. We’re happy to
@@ -63,7 +63,7 @@
 			privacy practices.
 		</p>
 
-		<h2>How we use your information</h2>
+		<h2>How We Use Your Information</h2>
 		<ul>
 			<li>To respond to your inquiry and schedule consultations or sessions</li>
 			<li>To communicate with you about services you’ve asked about</li>
@@ -74,7 +74,7 @@
 			for advertising. We won’t add you to a mailing list without your permission.
 		</p>
 
-		<h2>Service providers</h2>
+		<h2>Service Providers</h2>
 		<p>We use a small number of trusted third parties to operate this website:</p>
 		<ul>
 			<li>
@@ -99,7 +99,7 @@
 			or others.
 		</p>
 
-		<h2>How long we keep information</h2>
+		<h2>How Long We Keep Information</h2>
 		<p>
 			We keep inquiry messages only as long as needed to respond and for reasonable business
 			records, and then delete them. <!-- TODO: confirm retention practice -->
@@ -112,7 +112,7 @@
 			email is completely secure.
 		</p>
 
-		<h2>Children’s privacy</h2>
+		<h2>Children’s Privacy</h2>
 		<p>
 			This website is intended for adults, including parents and caregivers seeking services on
 			behalf of a child. We do not knowingly collect personal information directly from children
@@ -120,25 +120,25 @@
 			will delete it.
 		</p>
 
-		<h2>Your choices</h2>
+		<h2>Your Choices</h2>
 		<p>
 			You may ask us to access, correct, or delete the personal information you’ve sent us through
 			this website by contacting us using the details below.
 		</p>
 
-		<h2>Links to other websites</h2>
+		<h2>Links to Other Websites</h2>
 		<p>
 			This website may link to other sites. We are not responsible for the privacy practices of
 			those sites.
 		</p>
 
-		<h2>Changes to this policy</h2>
+		<h2>Changes to This Policy</h2>
 		<p>
 			We may update this policy from time to time. The “Last updated” date above shows when it was
 			last changed.
 		</p>
 
-		<h2>Contact us</h2>
+		<h2>Contact Us</h2>
 		<p><a href={resolve('/contact')}>Contact page</a></p>
 	</article>
 </Section>
