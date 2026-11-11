@@ -130,7 +130,7 @@
 			</div>
 		{/each}
 		<div class="card">
-			<h3><a href={resolve('/services') + '#who-we-serve'}>Populations &amp; Settings</a></h3>
+			<h3><a href={resolve('/services') + '#who-we-serve'}>Who We Serve</a></h3>
 		</div>
 		<div class="card">
 			<h3><a href={resolve('/about') + '#meet-gwen'}>Meet Gwen</a></h3>
