@@ -139,12 +139,6 @@
 		</p>
 
 		<h2>Contact us</h2>
-		<p>
-			{site.name}<br />
-			{site.contact.city}, {site.contact.region}<br />
-			<a href="mailto:{site.contact.email}">{site.contact.email}</a><br />
-			<a href="tel:{site.contact.phone.replace(/[^\d+]/g, '')}">{site.contact.phone}</a>
-		</p>
 		<p><a href={resolve('/contact')}>Contact page</a></p>
 	</article>
 </Section>
