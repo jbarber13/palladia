@@ -58,6 +58,20 @@
 			Additionally, therapists are nationally certified as Board-Certified Music Therapists (MT-BC)
 			and Illinois state licensed as Licensed Professional Music Therapists (LPMT).
 		</p>
+
+		<h2>How do you protect client privacy and confidentiality?</h2>
+		<p>
+			Because we are a private-pay practice and do not bill health insurance directly, our practice
+			does not fall under federal HIPAA regulations. However, we hold ourselves to the highest
+			standards of privacy and strictly uphold all confidentiality laws and ethical guidelines
+			required by the Illinois Department of Financial and Professional Regulation (IDFPR),
+			Certification Board for Music Therapists (CBMT), and the American Music Therapy Association
+			(AMTA). For active clients, we use secure, encrypted client portals and protected payment
+			systems to keep records and personal information safe. (For your privacy, please avoid sharing
+			detailed or confidential health information through our general website contact form.)
+			Additionally, to further safeguard the confidentiality of all the individuals we serve, all
+			photos on our website depicting client experiences are stock images.
+		</p>
 	</div>
 </Section>
 
