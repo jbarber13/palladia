@@ -10,6 +10,11 @@
 
 	// Trial: the first benefits card flips over to show how music therapy helps.
 	let healthFlipped = $state(false);
+	// True only while a mouse or pen is over the card (touch never sets it, so taps don't stick).
+	let healthHover = $state(false);
+	function trackHover(event: PointerEvent) {
+		healthHover = event.pointerType === 'mouse' || event.pointerType === 'pen';
+	}
 
 	// Structured data so search engines understand this is a local business.
 	const jsonLd = {
@@ -87,7 +92,15 @@
 <Section tone="muted">
 	<h2 class="benefits-heading">What Music Therapy Can Do For You!</h2>
 	<ul class="benefits">
-		<li class="card flip-card" class:flipped={healthFlipped}>
+		<li
+			class="card flip-card"
+			class:flipped={healthFlipped}
+			class:hovering={healthHover}
+			onpointerenter={trackHover}
+			onpointermove={trackHover}
+			onpointerleave={() => (healthHover = false)}
+			onpointercancel={() => (healthHover = false)}
+		>
 			<button
 				type="button"
 				class="flip"
@@ -255,10 +268,8 @@
 		padding: 0;
 		position: relative;
 	}
-	@media (hover: hover) {
-		.benefits li.flip-card:hover {
-			background: var(--color-accent-soft);
-		}
+	.benefits li.flip-card.hovering {
+		background: var(--color-accent-soft);
 	}
 	.flip {
 		display: grid;
