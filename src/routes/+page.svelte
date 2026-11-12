@@ -255,9 +255,10 @@
 		padding: 0;
 		position: relative;
 	}
-	.benefits li.flip-card:hover,
-	.benefits li.flip-card:focus-within {
-		background: var(--color-accent-soft);
+	@media (hover: hover) {
+		.benefits li.flip-card:hover {
+			background: var(--color-accent-soft);
+		}
 	}
 	.flip {
 		display: grid;
