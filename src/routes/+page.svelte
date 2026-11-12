@@ -8,6 +8,9 @@
 	import logo from '#assets/logo-640.webp';
 	import Logo from '#lib/components/Logo.svelte';
 
+	// Trial: the first benefits card flips over to show how music therapy helps.
+	let healthFlipped = $state(false);
+
 	// Structured data so search engines understand this is a local business.
 	const jsonLd = {
 		'@context': 'https://schema.org',
@@ -84,8 +87,25 @@
 <Section tone="muted">
 	<h2 class="benefits-heading">What Music Therapy Can Do For You!</h2>
 	<ul class="benefits">
-		<li class="card">
-			<span class="emoji" aria-hidden="true">💚</span><span>Overall Health &amp; Well-Being</span>
+		<li class="card flip-card" class:flipped={healthFlipped}>
+			<button
+				type="button"
+				class="flip"
+				aria-expanded={healthFlipped}
+				onclick={() => (healthFlipped = !healthFlipped)}
+			>
+				<span class="flip-inner">
+					<span class="face front">
+						<span class="emoji" aria-hidden="true">💚</span><span
+							>Overall Health &amp; Well-Being</span
+						>
+					</span>
+					<span class="face back" aria-hidden={!healthFlipped}>
+						Singing, playing instruments, and guided listening lower blood pressure, boost immunity,
+						and promote holistic wellness.
+					</span>
+				</span>
+			</button>
 		</li>
 		<li class="card"><span class="emoji" aria-hidden="true">🧠</span><span>Memory Recall</span></li>
 		<li class="card"><span class="emoji" aria-hidden="true">💡</span><span>Mental Acuity</span></li>
@@ -226,6 +246,96 @@
 		}
 		.benefits li {
 			font-size: 1.1rem;
+		}
+	}
+	/* Flip card (trial on the first benefits card). Faces share one grid cell so the card
+	   is as tall as the longer face. */
+	.benefits li.flip-card {
+		display: block;
+		padding: 0;
+		position: relative;
+	}
+	.benefits li.flip-card:hover,
+	.benefits li.flip-card:focus-within {
+		background: var(--color-accent-soft);
+	}
+	.flip {
+		display: grid;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background: none;
+		color: inherit;
+		font: inherit;
+		line-height: inherit;
+		text-align: inherit;
+		cursor: pointer;
+		border-radius: inherit;
+		perspective: 60rem;
+	}
+	.flip:focus-visible {
+		outline: 3px solid var(--color-accent);
+		outline-offset: 2px;
+	}
+	.flip-inner {
+		display: grid;
+		grid-template: 1fr / 1fr;
+	}
+	.face {
+		grid-area: 1 / 1;
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+		align-items: center;
+		justify-content: center;
+		min-height: 5rem;
+		padding: 0.6rem 0.75rem;
+	}
+	.back {
+		font-family: var(--font-body);
+		font-size: 0.8rem;
+		font-weight: 500;
+		line-height: 1.35;
+		color: var(--color-heading);
+	}
+	/* Default (and reduced motion): swap faces without spinning. */
+	.back,
+	.flipped .front {
+		visibility: hidden;
+	}
+	.flipped .back {
+		visibility: visible;
+	}
+	@media (prefers-reduced-motion: no-preference) {
+		.benefits li.flip-card {
+			transition: background-color 0.15s ease;
+		}
+		.flip-inner {
+			transform-style: preserve-3d;
+			transition: transform 0.6s ease;
+		}
+		.face,
+		.flipped .front,
+		.flipped .back {
+			visibility: visible;
+			backface-visibility: hidden;
+		}
+		.back {
+			transform: rotateY(180deg);
+		}
+		.flipped .flip-inner {
+			transform: rotateY(180deg);
+		}
+	}
+	@media (min-width: 40rem) {
+		.face {
+			min-height: 6.5rem;
+			padding: var(--space-2) var(--space-2);
+		}
+		.back {
+			font-size: 0.9rem;
 		}
 	}
 	.services {
