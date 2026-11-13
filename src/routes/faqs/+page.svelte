@@ -17,7 +17,7 @@
 		<h2>How often are sessions scheduled?</h2>
 		<p>
 			Everyone is different, but on average, we recommend scheduling sessions weekly to get the most
-			benefits out of our services.
+			benefits from our services.
 		</p>
 
 		<h2>How long are sessions?</h2>
