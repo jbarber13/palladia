@@ -25,7 +25,7 @@
 			back: 'Learning rhythms, improvising, and lyric analysis sharpen focus, attention, and cognitive processing speed.'
 		},
 		{
-			emoji: '🌤️',
+			emoji: '🌊',
 			title: 'Emotional Regulation & Mood Support',
 			breakAfter: 'Emotional Regulation',
 			back: 'Personalized playlists, songwriting, and lyric reflection help lift your mood and safely navigate overwhelming feelings.'
