@@ -8,12 +8,95 @@
 	import logo from '#assets/logo-640.webp';
 	import Logo from '#lib/components/Logo.svelte';
 
-	// Trial: the first benefits card flips over to show how music therapy helps.
-	let healthFlipped = $state(false);
-	// True only while a mouse or pen is over the card (touch never sets it, so taps don't stick).
-	let healthHover = $state(false);
-	function trackHover(event: PointerEvent) {
-		healthHover = event.pointerType === 'mouse' || event.pointerType === 'pen';
+	const benefits = [
+		{
+			emoji: '💚',
+			title: 'Overall Health & Well-Being',
+			back: 'Singing, playing instruments, and guided listening lower blood pressure, boost immunity, and promote holistic wellness.'
+		},
+		{
+			emoji: '🧠',
+			title: 'Memory Recall',
+			back: 'Familiar songs and rhythmic cues activate brain pathways to unlock memories and strengthen recall.'
+		},
+		{
+			emoji: '💡',
+			title: 'Mental Acuity',
+			back: 'Learning rhythms, improvising, and lyric analysis sharpen focus, attention, and cognitive processing speed.'
+		},
+		{
+			emoji: '🌤️',
+			title: 'Emotional Regulation & Mood Support',
+			back: 'Personalized playlists, songwriting, and lyric reflection help lift your mood and safely navigate overwhelming feelings.'
+		},
+		{
+			emoji: '🛑',
+			title: 'Impulse Control',
+			back: 'Stop-and-play rhythm games strengthen impulse control, cognitive flexibility, and mindful decision-making.'
+		},
+		{
+			emoji: '🎨',
+			title: 'Creative Self-Expression',
+			back: "Songwriting and instrument play offer a safe, judgment-free outlet when words alone aren't enough."
+		},
+		{
+			emoji: '💪',
+			title: 'Empowerment',
+			back: 'Trying new instruments, leading rhythms, and stepping outside your comfort zone build confidence and autonomy.'
+		},
+		{
+			emoji: '🖐️',
+			title: 'Fine & Gross Motor Function',
+			back: 'Instrument play, finger movement games, and scarf dancing builds coordination, balance, grip strength, and physical mobility.'
+		},
+		{
+			emoji: '🗣️',
+			title: 'Speech Recovery',
+			back: 'Singing can bypass damaged language centers by activating shared musical and speech pathways in the brain.'
+		},
+		{
+			emoji: '🎤',
+			title: 'Vocal Strength',
+			back: 'Targeted breathing exercises and vocal warmups strengthen respiratory muscles, vocal projection, and articulation.'
+		},
+		{
+			emoji: '🤝',
+			title: 'Social Connection',
+			back: 'Group music making fosters teamwork, empathy, and welcoming community spaces where everyone feels genuinely heard.'
+		},
+		{
+			emoji: '🌈',
+			title: 'Reduced Isolation',
+			back: 'Regular weekly sessions offer consistent human connection, meaningful engagement, and relief from loneliness.'
+		},
+		{
+			emoji: '🧘',
+			title: 'Stress & Anxiety Relief',
+			back: 'Guided relaxation and drumming quiet racing thoughts, release physical tension, and reset your nervous system.'
+		},
+		{
+			emoji: '🩹',
+			title: 'Pain Management',
+			back: 'Music-assisted relaxation and rhythmic entrainment distract the brain from pain signals and ease physical tension.'
+		},
+		{
+			emoji: '🎉',
+			title: 'Have Fun!',
+			back: 'Engaging music interventions spark joy while actively moving you toward meaningful therapeutic goals.'
+		},
+		{
+			emoji: '✨',
+			title: 'And More!',
+			back: 'These are just some of the many benefits of music therapy! Contact us to explore what’s possible!'
+		}
+	];
+
+	// Each benefits card flips over to show how music therapy helps. Every card keeps its own state, keyed by title.
+	let flipped = $state<Record<string, boolean>>({});
+	// True only while a mouse or pen is over that card (touch never sets it, so taps don't stick).
+	let hovering = $state<Record<string, boolean>>({});
+	function trackHover(event: PointerEvent, title: string) {
+		hovering[title] = event.pointerType === 'mouse' || event.pointerType === 'pen';
 	}
 
 	// Structured data so search engines understand this is a local business.
@@ -92,71 +175,31 @@
 <Section tone="muted">
 	<h2 class="benefits-heading">What Music Therapy Can Do For You!</h2>
 	<ul class="benefits">
-		<li
-			class="card flip-card"
-			class:flipped={healthFlipped}
-			class:hovering={healthHover}
-			onpointerenter={trackHover}
-			onpointermove={trackHover}
-			onpointerleave={() => (healthHover = false)}
-			onpointercancel={() => (healthHover = false)}
-		>
-			<button
-				type="button"
-				class="flip"
-				aria-expanded={healthFlipped}
-				onclick={() => (healthFlipped = !healthFlipped)}
+		{#each benefits as card (card.title)}
+			<li
+				class="card flip-card"
+				class:flipped={flipped[card.title]}
+				class:hovering={hovering[card.title]}
+				onpointerenter={(event) => trackHover(event, card.title)}
+				onpointermove={(event) => trackHover(event, card.title)}
+				onpointerleave={() => (hovering[card.title] = false)}
+				onpointercancel={() => (hovering[card.title] = false)}
 			>
-				<span class="flip-inner">
-					<span class="face front">
-						<span class="emoji" aria-hidden="true">💚</span><span
-							>Overall Health &amp; Well-Being</span
-						>
+				<button
+					type="button"
+					class="flip"
+					aria-expanded={!!flipped[card.title]}
+					onclick={() => (flipped[card.title] = !flipped[card.title])}
+				>
+					<span class="flip-inner">
+						<span class="face front">
+							<span class="emoji" aria-hidden="true">{card.emoji}</span><span>{card.title}</span>
+						</span>
+						<span class="face back" aria-hidden={!flipped[card.title]}>{card.back}</span>
 					</span>
-					<span class="face back" aria-hidden={!healthFlipped}>
-						Singing, playing instruments, and guided listening lower blood pressure, boost immunity,
-						and promote holistic wellness.
-					</span>
-				</span>
-			</button>
-		</li>
-		<li class="card"><span class="emoji" aria-hidden="true">🧠</span><span>Memory Recall</span></li>
-		<li class="card"><span class="emoji" aria-hidden="true">💡</span><span>Mental Acuity</span></li>
-		<li class="card">
-			<span class="emoji" aria-hidden="true">🌤️</span><span
-				>Emotional Regulation &amp; Mood Support</span
-			>
-		</li>
-		<li class="card">
-			<span class="emoji" aria-hidden="true">🛑</span><span>Impulse Control</span>
-		</li>
-		<li class="card">
-			<span class="emoji" aria-hidden="true">🎨</span><span>Creative Self-Expression</span>
-		</li>
-		<li class="card"><span class="emoji" aria-hidden="true">💪</span><span>Empowerment</span></li>
-		<li class="card">
-			<span class="emoji" aria-hidden="true">🖐️</span><span>Fine &amp; Gross Motor Function</span>
-		</li>
-		<li class="card">
-			<span class="emoji" aria-hidden="true">🗣️</span><span>Speech Recovery</span>
-		</li>
-		<li class="card">
-			<span class="emoji" aria-hidden="true">🎤</span><span>Vocal Strength</span>
-		</li>
-		<li class="card">
-			<span class="emoji" aria-hidden="true">🤝</span><span>Social Connection</span>
-		</li>
-		<li class="card">
-			<span class="emoji" aria-hidden="true">🌈</span><span>Reduced Isolation</span>
-		</li>
-		<li class="card">
-			<span class="emoji" aria-hidden="true">🧘</span><span>Stress &amp; Anxiety Relief</span>
-		</li>
-		<li class="card">
-			<span class="emoji" aria-hidden="true">🩹</span><span>Pain Management</span>
-		</li>
-		<li class="card"><span class="emoji" aria-hidden="true">🎉</span><span>Have Fun!</span></li>
-		<li class="card"><span class="emoji" aria-hidden="true">✨</span><span>And More!</span></li>
+				</button>
+			</li>
+		{/each}
 	</ul>
 </Section>
 
@@ -267,10 +310,10 @@
 			font-size: 1.1rem;
 		}
 	}
-	/* Flip card (trial on the first benefits card). Faces share one grid cell so the card
-	   is as tall as the longer face. */
+	/* Flip cards. Faces share one grid cell so the card is as tall as the longer face, and
+	   cards in the same row stretch to the tallest one. */
 	.benefits li.flip-card {
-		display: block;
+		display: grid;
 		padding: 0;
 		position: relative;
 	}
