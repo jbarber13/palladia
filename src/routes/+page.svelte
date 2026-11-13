@@ -123,9 +123,13 @@
 		<li class="card"><span class="emoji" aria-hidden="true">🧠</span><span>Memory Recall</span></li>
 		<li class="card"><span class="emoji" aria-hidden="true">💡</span><span>Mental Acuity</span></li>
 		<li class="card">
-			<span class="emoji" aria-hidden="true">🌊</span><span>Emotional Regulation</span>
+			<span class="emoji" aria-hidden="true">🌤️</span><span
+				>Emotional Regulation &amp; Mood Support</span
+			>
 		</li>
-		<li class="card"><span class="emoji" aria-hidden="true">😊</span><span>Mood Support</span></li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">🛑</span><span>Impulse Control</span>
+		</li>
 		<li class="card">
 			<span class="emoji" aria-hidden="true">🎨</span><span>Creative Self-Expression</span>
 		</li>
@@ -145,9 +149,11 @@
 		<li class="card">
 			<span class="emoji" aria-hidden="true">🌈</span><span>Reduced Isolation</span>
 		</li>
-		<li class="card"><span class="emoji" aria-hidden="true">🧘</span><span>Stress Relief</span></li>
 		<li class="card">
-			<span class="emoji" aria-hidden="true">🍃</span><span>Anxiety Reduction</span>
+			<span class="emoji" aria-hidden="true">🧘</span><span>Stress &amp; Anxiety Relief</span>
+		</li>
+		<li class="card">
+			<span class="emoji" aria-hidden="true">🩹</span><span>Pain Management</span>
 		</li>
 		<li class="card"><span class="emoji" aria-hidden="true">🎉</span><span>Have Fun!</span></li>
 		<li class="card"><span class="emoji" aria-hidden="true">✨</span><span>And More!</span></li>
