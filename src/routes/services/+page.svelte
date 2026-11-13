@@ -126,6 +126,9 @@
 		align-items: start;
 	}
 	@media (min-width: 48rem) {
+		.who {
+			grid-template-columns: 2fr 3fr;
+		}
 		.image-left > :global(img) {
 			order: -1;
 		}
