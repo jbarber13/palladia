@@ -36,7 +36,7 @@
 			back: 'Stop-and-play rhythm games strengthen impulse control, cognitive flexibility, and mindful decision-making.'
 		},
 		{
-			emoji: '🎨',
+			emoji: '🎵',
 			title: 'Creative Self-Expression',
 			back: "Songwriting and instrument play offer a safe, judgment-free outlet when words alone aren't enough."
 		},
