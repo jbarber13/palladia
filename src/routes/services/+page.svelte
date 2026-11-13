@@ -45,9 +45,7 @@
 			<div>
 				<h3>Settings</h3>
 				<ul>
-					<li>
-						Senior Living Communities (memory care, independent living, skilled nursing, etc.)
-					</li>
+					<li>Senior Living (memory care, independent living, skilled nursing, etc.)</li>
 					<li>K-12 Schools</li>
 					<li>Day Programs</li>
 					<li>Community Centers</li>
