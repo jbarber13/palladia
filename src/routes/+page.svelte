@@ -71,7 +71,7 @@
 			back: 'Regular weekly sessions offer consistent human connection, meaningful engagement, and relief from loneliness.'
 		},
 		{
-			emoji: '🧘',
+			emoji: '🍃',
 			title: 'Stress & Anxiety Relief',
 			back: 'Guided relaxation and drumming quiet racing thoughts, release physical tension, and reset your nervous system.'
 		},
