@@ -23,10 +23,13 @@
 <Section>
 	<div id="who-we-serve">
 		<h2>Who Do We Serve?</h2>
+		<p>
+			We serve individuals of all ages and abilities, and we provide support for many areas of need
+			in a wide range of settings.
+		</p>
 		<div class="grid-2 who">
 			<div>
 				<h3>Populations</h3>
-				<p>We serve individuals of all ages and can provide support for areas of need such as:</p>
 				<ul>
 					<li>Alzheimer’s/Dementia</li>
 					<li>Traumatic Brain Injuries &amp; Other Neurological Conditions</li>
