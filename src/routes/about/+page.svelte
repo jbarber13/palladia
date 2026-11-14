@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { asset, resolve } from '$app/paths';
 	import { site } from '#lib/site.ts';
 	import Seo from '#lib/components/Seo.svelte';
 	import Hero from '#lib/components/Hero.svelte';
 	import Section from '#lib/components/Section.svelte';
 	import Logo from '#lib/components/Logo.svelte';
+	import Image from '#lib/components/Image.svelte';
 </script>
 
 <Seo
@@ -22,8 +23,7 @@
 />
 
 <Section>
-	<!-- TODO: add a headshot beside the bio (see README → Images) -->
-	<div class="bio" id="meet-gwen">
+	<div class="grid-2 bio" id="meet-gwen">
 		<div>
 			<h2>{site.owner.name}, {site.owner.credentials}</h2>
 			<p class="role">{site.owner.title}</p>
@@ -47,6 +47,14 @@
 				through music.
 			</p>
 			<p>Gwen’s Favorite Things: Dogs, daily NYT games, and ballroom dancing with her husband.</p>
+		</div>
+		<div class="bio-photo">
+			<Image
+				src={asset('images/gwen-with-guitar.jpg')}
+				alt="Gwen smiling and holding an acoustic guitar"
+				ratio="4 / 5"
+				fit="cover"
+			/>
 		</div>
 	</div>
 </Section>
@@ -118,7 +126,16 @@
 
 <style>
 	.bio {
-		max-width: 46rem;
+		align-items: start;
+	}
+	.bio-photo {
+		width: 100%;
+		max-width: 22rem;
+	}
+	@media (min-width: 48rem) {
+		.bio {
+			grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+		}
 	}
 	h3 {
 		font-size: 1.05rem;
