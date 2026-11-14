@@ -56,7 +56,6 @@
 		<h2>Education &amp; Credentials</h2>
 		<div class="grid-2 credentials">
 			<div>
-				<h3>Certification &amp; Licensure</h3>
 				<ul>
 					<!-- Wording per CBMT (cbmt.org) -->
 					<li>
@@ -71,11 +70,9 @@
 				</ul>
 			</div>
 			<div>
-				<h3>Education</h3>
 				<ul>
 					<li>Bachelor of Music Therapy, Radford University</li>
 				</ul>
-				<h3>Professional Memberships</h3>
 				<ul>
 					<li>American Music Therapy Association (AMTA)</li>
 				</ul>
