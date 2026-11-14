@@ -20,7 +20,7 @@
 
 <Section>
 	<div>
-		<h2>What is Music Therapy?</h2>
+		<h2>What is music therapy?</h2>
 		<p>
 			Music therapy is the clinical, evidence-based use of music to help people reach
 			individualized, non-musical goals guided by a Board Certified Music Therapist (MT-BC). These
