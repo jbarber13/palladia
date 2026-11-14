@@ -32,7 +32,7 @@
 				<h3>Populations</h3>
 				<ul>
 					<li>Alzheimer’s/Dementia</li>
-					<li>Traumatic Brain Injuries &amp; Other Neurologic Conditions</li>
+					<li>Traumatic Brain Injuries/Other Neurological Conditions</li>
 					<li>Stroke Recovery</li>
 					<li>Intellectual/Developmental Disabilities</li>
 					<li>Behavioral Issues</li>
