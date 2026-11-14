@@ -67,12 +67,10 @@
 
 		<h2>How do you protect client privacy and confidentiality?</h2>
 		<p>
-			Your privacy matters a lot to us! We’re a private-pay practice and don’t bill health
-			insurance, so we aren’t covered by HIPAA, but we hold ourselves to the highest standards of
-			confidentiality and follow the rules of the IDFPR, CBMT, and AMTA. One small request: please
-			don’t share detailed health information through our website contact form. We’re always happy
-			to talk through those details with you by phone or during a consultation. You can read more in
-			our <a href={resolve('/privacy')}>Privacy Policy</a>.
+			Palladia Music Therapy takes client privacy and confidentiality very seriously! Please avoid
+			sharing detailed health information through our general website contact form. We are always
+			happy to talk through those details with you by phone or during a consultation. You can read
+			more in our <a href={resolve('/privacy')}>Privacy Policy</a>.
 		</p>
 	</div>
 </Section>
