@@ -152,12 +152,9 @@
 			<h2>What is Music Therapy?</h2>
 			<!-- TODO: client to review the draft intro copy -->
 			<p>
-				Music therapy uses the power of music to support overall well-being, lift your mood, connect
-				with others, and reach personal goals, guided by a Board Certified Music Therapist (MT-BC).
-				Singing, playing instruments, songwriting, and guided listening create a safe, judgment-free
-				space to express yourself and have fun. No musical experience is needed! Every session is
-				tailored to your unique needs, strengths, and preferences, so everyone can take part and
-				benefit.
+				Music therapy turns the love of music into progress toward non-musical goals. Led by a Board
+				Certified Music Therapist (MT-BC), sessions are personalized for each individual, welcome
+				people of all ages and abilities, and require no prior musical experience!
 			</p>
 			<p>
 				Interested in how music therapy can support you, a loved one, or your organization?<br />
