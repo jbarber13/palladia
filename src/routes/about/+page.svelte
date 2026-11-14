@@ -125,9 +125,6 @@
 </Section>
 
 <style>
-	.bio {
-		align-items: start;
-	}
 	.bio-photo {
 		width: 100%;
 		max-width: 22rem;
