@@ -10,7 +10,11 @@
 	description="Answers to common questions about music therapy sessions with {site.name}, including scheduling, session length, group size, insurance, and credentials."
 />
 
-<Hero title="FAQs" image={null} />
+<Hero
+	title="FAQs"
+	subtitle="These are some of the questions we get asked most often. If you have other questions or need more information about something, please ask!"
+	image={null}
+/>
 
 <Section>
 	<div>
