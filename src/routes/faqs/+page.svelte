@@ -14,6 +14,7 @@
 	title="FAQs"
 	subtitle="Below are answers to some of the questions we are asked most often. If you have additional questions or would like more information, please contact us."
 	image={null}
+	wide
 />
 
 <Section>
