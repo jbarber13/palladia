@@ -43,7 +43,7 @@ export const site = {
 	},
 
 	/** Shown at the top of the privacy policy. Update whenever the policy changes. */
-	privacyPolicyUpdated: '2026-11-01',
+	privacyPolicyUpdated: '2026-11-11',
 
 	social: [
 		// TODO: add or remove links. Empty list hides the section.
