@@ -67,11 +67,12 @@
 
 		<h2>How do you protect client privacy and confidentiality?</h2>
 		<p>
-			We are a private-pay practice and do not bill health insurance, so we are not covered by
-			HIPAA. We still hold ourselves to the highest standards of confidentiality and follow the
-			rules of the IDFPR, CBMT, and AMTA. For your privacy, please avoid sharing detailed health
-			information through our general website contact form. You can read more in our
-			<a href={resolve('/privacy')}>Privacy Policy</a>.
+			Your privacy matters a lot to us! We’re a private-pay practice and don’t bill health
+			insurance, so we aren’t covered by HIPAA, but we hold ourselves to the highest standards of
+			confidentiality and follow the rules of the IDFPR, CBMT, and AMTA. One small request: please
+			don’t share detailed health information through our website contact form. We’re always happy
+			to talk through those details with you by phone or during a consultation. You can read more in
+			our <a href={resolve('/privacy')}>Privacy Policy</a>.
 		</p>
 	</div>
 </Section>
