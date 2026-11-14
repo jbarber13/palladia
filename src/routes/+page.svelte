@@ -176,7 +176,8 @@
 <Section tone="muted">
 	<h2 class="benefits-heading">Learn About The Benefits of Music Therapy!</h2>
 	<p class="benefits-intro">
-		Tap or click on the different cards to see how music therapy can help!
+		This section is interactive! Tap or click on the different cards to see how music therapy can
+		help!
 	</p>
 	<ul class="benefits">
 		{#each benefits as card (card.title)}
