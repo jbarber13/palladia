@@ -175,6 +175,9 @@
 
 <Section tone="muted">
 	<h2 class="benefits-heading">Learn About The Benefits of Music Therapy!</h2>
+	<p class="benefits-intro">
+		Tap or click on the different cards to see how music therapy can help!
+	</p>
 	<ul class="benefits">
 		{#each benefits as card (card.title)}
 			<li
@@ -259,6 +262,9 @@
 <style>
 	.benefits-heading {
 		margin-top: var(--space-3);
+		margin-bottom: var(--space-1);
+	}
+	.benefits-intro {
 		margin-bottom: var(--space-3);
 	}
 	.benefits {
@@ -299,7 +305,7 @@
 	@media (min-width: 40rem) {
 		.benefits-heading {
 			margin-top: var(--space-3);
-			margin-bottom: var(--space-3);
+			margin-bottom: var(--space-1);
 		}
 		.benefits {
 			margin-bottom: var(--space-3);
