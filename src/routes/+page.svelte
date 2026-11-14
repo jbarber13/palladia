@@ -174,7 +174,7 @@
 </Section>
 
 <Section tone="muted">
-	<h2 class="benefits-heading">What Music Therapy Can Do For You!</h2>
+	<h2 class="benefits-heading">Learn About The Benefits of Music Therapy!</h2>
 	<ul class="benefits">
 		{#each benefits as card (card.title)}
 			<li
