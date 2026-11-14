@@ -142,7 +142,6 @@
 		margin: var(--space-3) 0 var(--space-1);
 	}
 	.credentials {
-		align-items: start;
 		gap: var(--space-2) var(--space-4);
 	}
 	.credentials h3:first-child {
