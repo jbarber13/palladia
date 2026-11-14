@@ -146,7 +146,7 @@
 	}
 	@media (min-width: 48rem) {
 		.credentials {
-			grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 		}
 	}
 	.role {
