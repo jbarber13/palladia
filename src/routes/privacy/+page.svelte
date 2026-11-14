@@ -36,6 +36,11 @@
 			have.
 		</p>
 
+		<p>
+			This policy has two parts: the first explains how this website handles information, and the
+			second explains how our practice protects client records and confidentiality.
+		</p>
+
 		<h2>Information We Collect</h2>
 		<p><strong>Information you give us.</strong> When you use our contact form, we collect:</p>
 		<ul>
