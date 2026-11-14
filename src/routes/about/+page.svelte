@@ -82,7 +82,7 @@
 					<li><strong>Bachelor of Music Therapy</strong> — Radford University</li>
 				</ul>
 				<ul>
-					<li><strong>AMTA</strong> — American Music Therapy Association</li>
+					<li><strong>Member of AMTA</strong> — American Music Therapy Association</li>
 				</ul>
 			</div>
 		</div>
