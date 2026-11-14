@@ -62,30 +62,20 @@
 <Section tone="muted">
 	<div class="education">
 		<h2>Education &amp; Credentials</h2>
-		<div class="grid-2 credentials">
-			<div>
-				<ul>
-					<!-- Wording per CBMT (cbmt.org) -->
-					<li>
-						<strong>MT-BC</strong> — Music Therapist-Board Certified, Certification Board for Music Therapists
-						(CBMT)
-					</li>
-					<!-- Wording per the Illinois Music Therapy Licensing and Practice Act, 225 ILCS 56 -->
-					<li>
-						<strong>LPMT</strong> — Licensed Professional Music Therapist, Illinois Department of Financial
-						and Professional Regulation (IDFPR)
-					</li>
-				</ul>
-			</div>
-			<div>
-				<ul>
-					<li><strong>Bachelor of Music Therapy</strong> — Radford University</li>
-				</ul>
-				<ul>
-					<li><strong>Member of AMTA</strong> — American Music Therapy Association</li>
-				</ul>
-			</div>
-		</div>
+		<ul>
+			<!-- Wording per CBMT (cbmt.org) -->
+			<li>
+				<strong>MT-BC</strong> — Music Therapist-Board Certified, Certification Board for Music Therapists
+				(CBMT)
+			</li>
+			<!-- Wording per the Illinois Music Therapy Licensing and Practice Act, 225 ILCS 56 -->
+			<li>
+				<strong>LPMT</strong> — Licensed Professional Music Therapist, Illinois Department of Financial
+				and Professional Regulation (IDFPR)
+			</li>
+			<li><strong>Bachelor of Music Therapy</strong> — Radford University</li>
+			<li><strong>Member of AMTA</strong> — American Music Therapy Association</li>
+		</ul>
 	</div>
 </Section>
 
@@ -137,17 +127,6 @@
 	h3 {
 		font-size: 1.05rem;
 		margin: var(--space-3) 0 var(--space-1);
-	}
-	.credentials {
-		gap: var(--space-2) var(--space-4);
-	}
-	.credentials h3:first-child {
-		margin-top: 0;
-	}
-	@media (min-width: 48rem) {
-		.credentials {
-			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-		}
 	}
 	.role {
 		color: var(--color-text-muted);
