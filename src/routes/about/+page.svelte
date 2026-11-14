@@ -71,10 +71,10 @@
 			</div>
 			<div>
 				<ul>
-					<li>Bachelor of Music Therapy, Radford University</li>
+					<li><strong>Bachelor of Music Therapy</strong> — Radford University</li>
 				</ul>
 				<ul>
-					<li>American Music Therapy Association (AMTA)</li>
+					<li><strong>AMTA</strong> — American Music Therapy Association</li>
 				</ul>
 			</div>
 		</div>
