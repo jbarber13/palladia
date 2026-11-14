@@ -127,7 +127,7 @@
 	}
 	@media (min-width: 48rem) {
 		.who {
-			grid-template-columns: 2fr 3fr;
+			grid-template-columns: auto auto;
 		}
 		.image-left > :global(img) {
 			order: -1;
