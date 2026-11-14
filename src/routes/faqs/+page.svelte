@@ -12,7 +12,7 @@
 
 <Hero
 	title="FAQs"
-	subtitle="These are some of the questions we get asked most often. If you have other questions or need more information about something, please ask!"
+	subtitle="Below are answers to some of the questions we are asked most often. If you have additional questions or would like more information, please contact us."
 	image={null}
 />
 
