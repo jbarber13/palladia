@@ -20,10 +20,7 @@
 <Section>
 	<div>
 		<h2>How often are sessions scheduled?</h2>
-		<p>
-			Everyone is different, but on average, we recommend scheduling sessions weekly to get the most
-			benefits from our services.
-		</p>
+		<p>To get the most benefits from our services, we recommend scheduling sessions weekly.</p>
 
 		<h2>How long are sessions?</h2>
 		<p>
