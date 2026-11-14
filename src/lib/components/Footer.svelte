@@ -20,7 +20,8 @@
 		<div>
 			<p class="heading">Contact</p>
 			<p>
-				<a href="tel:{site.contact.phone.replace(/[^\d+]/g, '')}">{site.contact.phone}</a><br />
+				<a href="tel:{site.contact.phone.replace(/[^\d+]/g, '')}">{site.contact.phone}</a> (call or
+				text)<br />
 				<a href="mailto:{site.contact.email}">{site.contact.email}</a><br />
 				Serving {site.serviceArea.join(', ')}
 			</p>

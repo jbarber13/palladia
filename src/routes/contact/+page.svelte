@@ -25,7 +25,10 @@
 			<h2>Contact Information</h2>
 			<dl>
 				<dt>Phone</dt>
-				<dd><a href="tel:{site.contact.phone.replace(/[^\d+]/g, '')}">{site.contact.phone}</a></dd>
+				<dd>
+					<a href="tel:{site.contact.phone.replace(/[^\d+]/g, '')}">{site.contact.phone}</a> (call or
+					text)
+				</dd>
 				<dt>Email</dt>
 				<dd><a href="mailto:{site.contact.email}">{site.contact.email}</a></dd>
 				<dt>Service Area</dt>
