@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { site } from '#lib/site.ts';
 	import Seo from '#lib/components/Seo.svelte';
 	import Hero from '#lib/components/Hero.svelte';
@@ -66,16 +67,11 @@
 
 		<h2>How do you protect client privacy and confidentiality?</h2>
 		<p>
-			Because we are a private-pay practice and do not bill health insurance directly, our practice
-			does not fall under federal HIPAA regulations. However, we hold ourselves to the highest
-			standards of privacy and strictly uphold all confidentiality laws and ethical guidelines
-			required by the Illinois Department of Financial and Professional Regulation (IDFPR),
-			Certification Board for Music Therapists (CBMT), and the American Music Therapy Association
-			(AMTA). For active clients, we use secure, encrypted client portals and protected payment
-			systems to keep records and personal information safe. (For your privacy, please avoid sharing
-			detailed or confidential health information through our general website contact form.)
-			Additionally, to further safeguard the confidentiality of all the individuals we serve, all
-			photos on our website depicting client experiences are stock images.
+			We are a private-pay practice and do not bill health insurance, so we are not covered by
+			HIPAA. We still hold ourselves to the highest standards of confidentiality and follow the
+			rules of the IDFPR, CBMT, and AMTA. For your privacy, please avoid sharing detailed health
+			information through our general website contact form. You can read more in our
+			<a href={resolve('/privacy')}>Privacy Policy</a>.
 		</p>
 	</div>
 </Section>
