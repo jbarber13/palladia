@@ -21,7 +21,9 @@
 		</p>
 
 		<h2>How long are sessions?</h2>
-		<p>Our average session times run 30-50 min long depending on the age range of the clients.</p>
+		<p>
+			Our average session times run 30-50 minutes long depending on the age range of the clients.
+		</p>
 
 		<h2>How many clients can be in a group?</h2>
 		<p>
