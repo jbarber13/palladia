@@ -174,7 +174,7 @@
 </Section>
 
 <Section tone="muted">
-	<h2 class="benefits-heading">Learn About The Benefits of Music Therapy!</h2>
+	<h2 class="benefits-heading">What Are the Benefits of Music Therapy?</h2>
 	<p class="benefits-intro">
 		This section is interactive! Tap or click on the different cards to see how music therapy can
 		help!
