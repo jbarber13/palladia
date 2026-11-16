@@ -8,7 +8,7 @@
 
 <Seo
 	title="Contact"
-	description="Contact {site.name} to schedule a consultation for individual or group music therapy in Lake County, IL."
+	description="Contact {site.name} to schedule a consultation for group or individual music therapy in Lake County, IL."
 />
 
 <!-- TODO: contact intro copy -->

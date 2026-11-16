@@ -9,7 +9,7 @@
 
 <Seo
 	title="Services"
-	description="Individual and group music therapy sessions from {site.name}, serving Lake County, IL."
+	description="Group and individual music therapy sessions from {site.name}, serving Lake County, IL."
 />
 
 <!-- TODO: services intro copy -->
