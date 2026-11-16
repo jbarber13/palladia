@@ -119,6 +119,11 @@
 		width: 100%;
 		max-width: 22rem;
 	}
+	@media (max-width: 47.99rem) {
+		.bio-photo {
+			margin-inline: auto;
+		}
+	}
 	@media (min-width: 48rem) {
 		.bio {
 			grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
