@@ -74,6 +74,7 @@
 			<label>
 				I’m Interested In:
 				<select name="interest">
+					<option value="" selected disabled>Choose 1</option>
 					<option>Individual Sessions</option>
 					<option>Group Sessions</option>
 					<option>Not Sure Yet</option>
