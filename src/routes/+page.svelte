@@ -157,6 +157,10 @@
 				clients are supported and encouraged every step of the way.
 			</p>
 			<p>
+				Wondering how music therapy is different from other therapies, or from music lessons?
+				<a href={resolve('/faqs')}>Read the answers in our FAQs &rarr;</a>
+			</p>
+			<p>
 				Interested in how music therapy can support you, a loved one, or your organization?
 				<a href={resolve('/contact')}>Contact us today to learn more! &rarr;</a>
 			</p>
