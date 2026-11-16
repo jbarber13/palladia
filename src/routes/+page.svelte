@@ -157,7 +157,7 @@
 				clients are supported and encouraged every step of the way.
 			</p>
 			<p>
-				Interested in how music therapy can support you, a loved one, or your organization?<br />
+				Interested in how music therapy can support you, a loved one, or your organization?
 				<a href={resolve('/contact')}>Contact us today to learn more! &rarr;</a>
 			</p>
 		</div>
