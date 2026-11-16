@@ -77,6 +77,7 @@
 					<option value="" selected disabled>Choose 1</option>
 					<option>Group Sessions</option>
 					<option>Individual Sessions</option>
+					<option>Both</option>
 					<option>Not Sure Yet</option>
 				</select>
 			</label>
