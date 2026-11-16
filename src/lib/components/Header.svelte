@@ -13,7 +13,20 @@
 
 	// Close the mobile menu after clicking a link
 	afterNavigate(() => (open = false));
+
+	let navEl: HTMLElement | undefined = $state();
+	let buttonEl: HTMLButtonElement | undefined = $state();
+
+	// Close the mobile menu when tapping anywhere outside the menu and its button
+	function closeOnOutsidePress(event: PointerEvent) {
+		if (!open) return;
+		const target = event.target as Node | null;
+		if (navEl?.contains(target) || buttonEl?.contains(target)) return;
+		open = false;
+	}
 </script>
+
+<svelte:window onpointerdown={closeOnOutsidePress} />
 
 <header>
 	<div class="container bar">
@@ -28,6 +41,7 @@
 		</a>
 
 		<button
+			bind:this={buttonEl}
 			class="menu-toggle"
 			aria-expanded={open}
 			aria-controls="site-nav"
@@ -37,7 +51,7 @@
 			<span class="bars" aria-hidden="true"></span>
 		</button>
 
-		<nav id="site-nav" class:open aria-label="Main">
+		<nav bind:this={navEl} id="site-nav" class:open aria-label="Main">
 			<ul>
 				{#each nav as item (item.href)}
 					<li>
