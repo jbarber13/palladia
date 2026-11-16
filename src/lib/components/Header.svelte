@@ -167,6 +167,9 @@
 		}
 		ul {
 			flex-direction: column;
+			align-items: flex-end;
+			/* line up with the right edge of the menu button's bars */
+			padding-right: 0.75rem;
 			gap: var(--space-1);
 		}
 	}
