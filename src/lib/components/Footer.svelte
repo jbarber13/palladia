@@ -93,7 +93,7 @@
 	}
 	@media (min-width: 48rem) {
 		.tagline {
-			font-size: 1rem;
+			font-size: 1.1rem;
 		}
 	}
 	.heading {
