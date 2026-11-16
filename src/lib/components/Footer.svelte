@@ -91,6 +91,11 @@
 		font-size: 1.15rem;
 		font-style: italic;
 	}
+	@media (min-width: 48rem) {
+		.tagline {
+			font-size: 1rem;
+		}
+	}
 	.heading {
 		font-weight: 700;
 		text-transform: uppercase;
