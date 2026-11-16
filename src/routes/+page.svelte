@@ -27,6 +27,7 @@
 		{
 			emoji: '🌊',
 			title: 'Emotional Regulation & Mood Support',
+			breakAfter: 'Emotional Regulation &',
 			back: 'Personalized playlists, songwriting, and lyric reflection help lift your mood and safely navigate overwhelming feelings.'
 		},
 		{
@@ -193,7 +194,9 @@
 					<span class="flip-inner">
 						<span class="face front">
 							<span class="emoji" aria-hidden="true">{card.emoji}</span><span class="title"
-								>{card.title}</span
+								>{#if card.breakAfter}{card.breakAfter}<br />{card.title
+										.slice(card.breakAfter.length)
+										.trim()}{:else}{card.title}{/if}</span
 							>
 						</span>
 						<span class="face back" aria-hidden={!flipped[card.title]}>{card.back}</span>
