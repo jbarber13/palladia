@@ -31,9 +31,8 @@
 			music listening, relaxation, and musical games.
 		</p>
 		<p>
-			Music therapy is accessible to people of all ages and abilities, with no prior musical
-			experience required. Because the music therapist tailors sessions to each person’s unique
-			needs, strengths, and preferences, everyone can participate and benefit.
+			Music therapy is accessible to people of all ages and abilities as the music therapist tailors
+			sessions to each client’s unique needs, strengths, and preferences.
 		</p>
 
 		<h2>How is music therapy different from music lessons and other therapies?</h2>
