@@ -88,7 +88,7 @@
 		text-transform: uppercase;
 	}
 	.tagline {
-		font-size: 1.2rem;
+		font-size: 1.15rem;
 		font-style: italic;
 	}
 	.heading {
