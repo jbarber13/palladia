@@ -157,10 +157,23 @@
 		.keep-together {
 			white-space: nowrap;
 		}
+		.bar {
+			/* the open menu is positioned relative to the bar, so the header height never changes */
+			position: relative;
+		}
 		nav {
 			display: none;
-			width: 100%;
-			padding-bottom: var(--space-2);
+			position: absolute;
+			top: 100%;
+			/* keeps the links' right edge where it was (container padding + 0.75rem) */
+			right: var(--space-3);
+			margin-top: 0.25rem;
+			padding: 0.25rem 0.75rem;
+			background: var(--color-surface);
+			border: 1px solid var(--color-border);
+			border-radius: 0.5rem;
+			box-shadow: 0 4px 12px rgb(0 0 0 / 0.12);
+			white-space: nowrap;
 		}
 		nav.open {
 			display: block;
@@ -168,9 +181,21 @@
 		ul {
 			flex-direction: column;
 			align-items: flex-end;
-			/* line up with the right edge of the menu button's bars */
-			padding-right: 0.75rem;
-			gap: var(--space-1);
+			gap: 0;
+		}
+		li {
+			display: flex;
+			align-items: center;
+			min-height: 2.75rem;
+		}
+		nav a {
+			position: relative;
+		}
+		/* enlarges the tap area without moving the text or underline */
+		nav a::before {
+			content: '';
+			position: absolute;
+			inset: -0.4rem -0.5rem;
 		}
 	}
 </style>
