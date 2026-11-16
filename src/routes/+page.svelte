@@ -152,9 +152,9 @@
 			<h2>What is Music Therapy?</h2>
 			<!-- TODO: client to review the draft intro copy -->
 			<p>
-				Music therapy turns the love of music into progress toward non-musical goals. Led by a Board
-				Certified Music Therapist (MT-BC), sessions are personalized for each individual, welcome
-				people of all ages and abilities, and require no prior musical experience!
+				Music therapy turns the love of music into real, documented progress toward non-musical
+				goals. Led by a Board Certified Music Therapist (MT-BC), every note has a purpose, and
+				clients are supported and encouraged every step of the way.
 			</p>
 			<p>
 				Interested in how music therapy can support you, a loved one, or your organization?<br />
