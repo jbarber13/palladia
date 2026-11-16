@@ -27,7 +27,6 @@
 		{
 			emoji: '🌊',
 			title: 'Emotional Regulation & Mood Support',
-			breakAfter: 'Emotional Regulation',
 			back: 'Personalized playlists, songwriting, and lyric reflection help lift your mood and safely navigate overwhelming feelings.'
 		},
 		{
@@ -193,12 +192,8 @@
 				>
 					<span class="flip-inner">
 						<span class="face front">
-							<span class="emoji" aria-hidden="true">{card.emoji}</span><span
-								class="title"
-								class:two-line={card.breakAfter}
-								>{#if card.breakAfter}{card.breakAfter}{' '}<br />{card.title.slice(
-										card.breakAfter.length + 1
-									)}{:else}{card.title}{/if}</span
+							<span class="emoji" aria-hidden="true">{card.emoji}</span><span class="title"
+								>{card.title}</span
 							>
 						</span>
 						<span class="face back" aria-hidden={!flipped[card.title]}>{card.back}</span>
@@ -293,11 +288,6 @@
 		font-size: 1.5rem;
 		line-height: 1;
 	}
-	/* Title with a forced line break: a bit smaller on phones so "Emotional Regulation" fits on one line. */
-	.benefits .title.two-line {
-		font-size: 0.7rem;
-		margin-inline: -0.4rem;
-	}
 	@media (min-width: 40rem) {
 		.benefits-heading {
 			margin-top: var(--space-3);
@@ -315,10 +305,6 @@
 		.benefits .emoji {
 			font-size: 1.75rem;
 		}
-		.benefits .title.two-line {
-			font-size: inherit;
-			margin-inline: 0;
-		}
 	}
 	@media (min-width: 64rem) {
 		.benefits {
@@ -326,9 +312,6 @@
 		}
 		.benefits li {
 			font-size: 1.1rem;
-		}
-		.benefits .title.two-line {
-			font-size: 1rem;
 		}
 	}
 	/* Flip cards. Faces share one grid cell so the card is as tall as the longer face, and
