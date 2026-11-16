@@ -15,7 +15,7 @@
 <!-- TODO: services intro copy -->
 <Hero
 	title="Services"
-	subtitle="At Palladia Music Therapy, our services combine compassionate, clinical care with flexible musical experiences. We offer both interactive group sessions and private individual therapy designed to foster personal growth, communication, and connection. Each session adapts to the individual or group, meeting unique needs through a blend of structured techniques and creative exploration."
+	subtitle="At Palladia Music Therapy, our services combine compassionate, clinical care with flexible musical experiences. We offer both interactive group sessions and private individual therapy designed to foster personal growth, communication, and connection. Each session adapts to the group or individual, meeting unique needs through a blend of structured techniques and creative exploration."
 	image={null}
 	wide
 />
