@@ -36,6 +36,16 @@
 			needs, strengths, and preferences, everyone can participate and benefit.
 		</p>
 
+		<h2>How is music therapy different from music lessons and other therapies?</h2>
+		<p>
+			Unlike music lessons, which focus on teaching musical skills, music therapy uses music as a
+			clinical tool to achieve non-musical health and wellness goals, so no musical experience is
+			required. While we still incorporate traditional therapeutic themes and emotional exploration,
+			we go beyond standard talk therapy by using active music-making and listening to engage the
+			brain’s emotional, cognitive, and motor centers, offering a powerful non-verbal outlet led by
+			a credentialed therapist.
+		</p>
+
 		<h2>How often are sessions scheduled?</h2>
 		<p>To get the most benefits from our services, we recommend scheduling sessions weekly.</p>
 
