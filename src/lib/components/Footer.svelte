@@ -14,7 +14,7 @@
 				<Logo size={72} alt="" />
 				<p class="name">{site.name}</p>
 			</div>
-			<p>{site.footerTagline}</p>
+			<p class="tagline">{site.footerTagline}</p>
 		</div>
 
 		<div>
@@ -86,6 +86,10 @@
 		font-weight: 700;
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
+	}
+	.tagline {
+		font-size: 1.2rem;
+		font-style: italic;
 	}
 	.heading {
 		font-weight: 700;
