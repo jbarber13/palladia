@@ -69,11 +69,11 @@
 			</label>
 			<label>
 				Phone
-				<input name="phone" type="tel" autocomplete="tel" />
+				<input name="phone" type="tel" autocomplete="tel" required />
 			</label>
 			<label>
 				I’m Interested In:
-				<select name="interest">
+				<select name="interest" required>
 					<option value="" selected disabled>Choose 1</option>
 					<option>Group Sessions</option>
 					<option>Individual Sessions</option>
