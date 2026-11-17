@@ -72,7 +72,7 @@ export const services: Service[] = [
 			'Interactive and customized music therapy programs for group settings of all kinds.',
 		details: [
 			// TODO: replace with real details
-			'Assessment & Program Design: An initial intake helps shape group-centered goals and session plans, with clinical progress documented after every session.',
+			'Assessment & Program Design: An initial assessment helps shape group-centered goals and session plans, with clinical progress documented after every session.',
 			'Updates & Facility Communication: Regular updates and documentation are provided to help facilities, schools, and care teams track participant engagement and program outcomes.',
 			'All Ages & Needs: We are able to provide support to clients across the lifespan, from young children to older adults, with varying levels of abilities and needs.',
 			'Mobile Service: Sessions occur on-site at your facility or organization, with all instruments and materials provided by Palladia Music Therapy.'
